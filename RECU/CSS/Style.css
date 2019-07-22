@@ -1,0 +1,935 @@
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+*	{
+	margin: 0px;
+	padding: 0px;
+	}
+body{
+	background-color: #eff7fc;
+	}
+section {
+	padding:20px;
+	}
+input{
+	border-radius: 5px;
+	background-color: #ffffff;
+	border: 2px solid;
+	border-color: #d0dce9;
+	font-size: 16px;
+  	font-family:'AvantGarde LT Medium', 'Lato Semibold', 'Tahoma';
+  	padding: 1px;
+	}
+textarea{
+	border-radius: 5px;
+	background-color: #ffffff;
+	border: 2px solid;
+	border-color: #d0dce9;
+	font-family:'AvantGarde LT Medium', 'Lato Semibold', 'Tahoma';
+	font-size: 16px;
+	padding: 1px;
+	}
+select{
+	border-radius: 5px;
+	background-color: #ffffff;
+	border: 2px solid;
+	border-color: #d0dce9;
+	font-family:'AvantGarde LT Medium', 'Lato Semibold', 'Tahoma';
+	font-size: 14px;
+	padding: 1px;
+	}
+a{
+	text-decoration: none;
+  }
+ul{
+	list-style: none;
+	}
+button:hover{
+	cursor: pointer;
+	}
+input:focus{
+	outline: none;
+	}
+button:focus{
+	outline: none;
+	}
+textarea:focus{
+	outline: none;
+	}
+select:focus{
+	outline: none;
+	}
+
+.BT .icon-menu {
+		padding: 4px;
+		color: #033649;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		float: center;
+		font-size: 30px;
+		}
+.BT {
+	display: block;
+	width: 9%;
+	position: fixed;
+	top: 16px;
+	margin-left: 5%;
+	z-index:99;
+	display: none;
+	}
+
+#HE{
+	width: 100%;
+	background-color: #D0DCE9;
+	top: 0px;
+	z-index:98;
+	position: fixed;
+	}
+		#HE ul{
+  		overflow: hidden;
+		width: 80%;
+		margin: 0px auto;
+		}
+		#HE ul li{
+  		float: right;
+		}
+		#HE ul li.I{
+  		float: left;
+  		width: 7.5%;
+		}
+		#HE ul li.I img{
+  		width: 100%;
+		}
+		#HE ul li a:hover{
+  		background: #3B71A6;
+  		color: white;
+		}
+		#HE ul li.S a:hover{
+  		background: #D0DCE9;
+		}
+		#HE ul li.S{
+  		display: none;
+		}
+		#HE ul li.S a{
+  		color: black;
+  		font-size: 18px;
+  		font-family:'Glee', 'Gisha', 'DengXian', 'Helvatica';
+  		font-weight: bold;
+		}
+		#HE ul li a{
+  		color: black;
+  		display: block;
+  		padding: 18px 18px;
+  		font-size: 18px;
+  		font-family:'AvantGarde LT Medium', 'Lato Semibold', 'Tahoma';
+  		}
+  		#HE ul li span{
+		margin-right: 10px;
+		font-size: 21px;
+		}
+		#HE ul li .USL{
+		background-color: #D0DCE9;
+		border-top: 4px solid rgba(59,113,166);
+		display:none;
+		width: 18%;
+		padding-bottom: 5px;
+		position: absolute;
+		}
+		#HE ul li .USL #US ul{
+		margin-top: 10%;
+		width: 90%;
+		}
+		#HE ul li .USL #US ul li a{
+		font-size: 14px;
+		color: #3B71A6;
+		padding: 6px;
+		margin-right: 5px;
+		}
+		#HE ul li .USL #US a:hover{
+		background: #D0DCE9;
+		text-decoration: underline;
+		}
+		#HE ul li .USL #US a.S:hover{
+		text-decoration: none;
+		}
+		#HE ul li .USL #US ul li button{
+    	font-size: 15px;
+    	padding: 4px;
+    	}
+		#HE ul li .USL input{
+		font-size: 14px;
+		width: 95%;
+		padding: 3px;
+		margin: 2.5%;
+		border: none;
+		}
+		#HE ul li .USL #US a.S{
+		font-size: 14px;
+		padding: 5px;
+		font-family:'AvantGarde LT Medium', 'Lato Semibold', 'Tahoma';
+		color: black;
+		float: right;
+		}
+		#HE ul li .USL input[type="checkbox"]{
+		width: 5%;
+		float: right;
+		margin-top: 2.2%;
+		margin-right: 5%;
+		}
+		#HE ul li:hover .USL{
+		display:block;
+		right: 16.7%;
+		}
+		#HE ul li .USO{
+		display:none;
+		border-top: 4px solid rgba(59,113,166);
+		background-color: #D0DCE9;
+		width: 10%;
+		position: absolute;
+		}
+		#HE ul li .USO li{
+		display: block;
+		width: 100%;
+		}
+		#HE ul li .USO li:hover{
+		cursor: pointer;
+		}
+		#HE ul li .USO li a{
+		font-size: 14px;
+		text-align: center;
+		}
+		#HE ul li .USO li span{
+		font-size: 17px;
+		}
+		#HE ul li .USO li.añadir{
+		display: none;
+		}
+		#HE ul li .USO li.crear{
+		display: none;
+		}
+		#HE ul li .USO li.config{
+		display: none;
+		}
+				.ME{
+	  			background-color: #033649;
+	  			width: 100%;
+	  			position: fixed;
+				top: 59px;
+				left:0;
+				z-index:97;
+				-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+				-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+				box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+				}
+				.ME ul{
+	  			overflow: hidden;
+				list-style: none;
+				width: 80%;
+				margin: 0 auto;
+				}
+				.ME ul li{
+	  			float: left;
+				}
+				.ME ul li a{
+	  			color: #f2f2f2;
+	  			display: block;
+	  			padding: 14px 12px;
+	  			font-size: 17px;
+	  			font-family: 'AvantGarde LT Medium', 'Lato Semibold', 'Tahoma';
+				}
+				.ME ul li a:hover{
+	  			background-color: #D0DCE9;
+	  			color: black;
+				}
+				.ME ul li span{
+				margin-right: 8px;
+				font-size: 20px;
+				}
+				.ME ul li span.icon-fle{
+				margin-left: 5px;
+				margin-right: 0px;
+				font-size: 20px;
+				}
+				.ME ul li.CAM:hover span.icon-fle{
+				color: #D0DCE9;
+				}
+				.ME ul li .CAS{
+				display:none;
+				border-top: 4px solid rgba(208,220,233);
+				background-color: #033649;
+				width: 11.5%;
+				position: absolute;
+				}
+				.ME ul li:hover .CAS{
+				display:block;
+				}
+				.ME ul li .CAS li{
+				display: block;
+				width: 100%;
+				}
+				.ME ul li.BU{
+				padding: 7px;
+				width: 30%;
+				float: right;
+				}
+				.ME ul li.BU .BA{
+				vertical-align: middle;
+				white-space: nowrap;
+			  	position: relative;
+			  	margin: 0px;
+				}
+				.ME ul li.BU .BA input{
+				margin-top: 2px;
+				width: 100%;
+				height: 35px;
+				border: none;
+				padding-left: 40px;
+				background: #ffffff;
+				}
+				.ME ul li.BU .BA button.IC{
+				border-top-left-radius: 4px;
+				border-bottom-left-radius: 4px;
+				border: none;
+				z-index: 1;
+				position: absolute;
+				opacity: 1;
+				margin-top: 2px;
+				background: #03212C;
+				height: 35px;
+				width: 36px;
+				font-size: 10px;
+				-webkit-transition: all .15s ease;
+				-moz-transition: all .15s ease;
+				-ms-transition: all .15s ease;
+				-o-transition: all .15s ease;
+				transition: all .15s ease;
+				}
+				.ME ul li.BU .BA:hover button.IC, .ME ul li.BU .BA:active button.IC, .ME ul li.BU .BA:focus button.IC{
+				background: #D0DCE9;
+				}
+  				.ME ul li.BU .BA:hover button.IC:hover{
+    			background: #D0DCE9;
+  				}
+				.ME ul li.BU .BA button.IC span.icon-bus{
+				color: #4f5b66;
+				margin-left: 8px;
+				}		
+#ES{
+	width: 80%;
+	background-color: #ffffff;
+	position: relative;
+	margin: auto;
+	margin-top: 15px;
+	border-top: 4px solid rgba(193,204,210);
+	padding-bottom: 10px;
+	overflow: hidden;
+	}
+	#ES h1{
+	color: black;
+  	font-size: 25px;
+  	font-family:'Gisha', 'DengXian',  'Helvatica';
+  	font-weight: bold;
+  	text-align: center;
+  	margin: 20px;
+  	margin-bottom: 40px;
+	}
+
+		.COT{
+		width: 22%;
+		padding-top: 2%;
+		margin: 0px;
+		margin-left: 5.6%;
+		margin-right: 5.6%;
+		margin-bottom: 2%;
+		float: left;
+		}
+		.CO{
+		width: 22%;
+		height: 35%;
+		margin-left: 5.6%;
+		margin-right: 5.6%;
+		margin-bottom: 1%;
+		float: left;
+		}
+			.CO img{
+			width: 100%;
+			margin: 0 auto;
+			}
+			.COT h2{
+			color: black;
+			padding-top: 20px;
+  			padding: 5px 5px;
+  			padding-left: 30px;
+  			font-size: 20px;
+  			font-family:'Gisha', 'DengXian', 'Helvatica';
+  			font-weight: bold;
+  			text-align: center;
+			}
+			.COT p{
+			color: black;
+  			padding: 5px 5px;
+  			padding-left: 30px;
+  			font-size: 16px;
+  			font-family:'Aller', 'Bahnschrift SemiBold', 'Arial';
+  			text-align: center;
+			}
+
+		.AR{
+		width: 220px;
+		height: 370px;
+		position:relative;
+		margin-left: 25px;
+		margin-bottom: 5px;
+		float: left
+		}
+			.AR img{
+			width: 100%;
+			margin: 0 auto;
+			}
+			.AR h2{
+			color: black;
+  			padding: 1px 1px;
+  			padding-left: 10px;
+  			font-size: 15px;
+  			font-family:'Open Sans', 'Bahnschrift', 'Arial';
+			}
+			.AR h3{
+			color: #CD5360;
+  			padding: 1px 1px;
+  			padding-left: 10px;
+  			font-size: 15px;
+  			font-family:'Open Sans', 'Bahnschrift', 'Arial';
+  			text-align: left;
+			}
+			.AR h4{
+			color: #c1ccd2;
+			padding: 1px 1px;
+  			padding-left: 10px;
+  			font-size: 9px;
+  			font-family:'Open Sans', 'Bahnschrift', 'Arial';
+  			text-align: left;
+			}
+			.AR ul{
+  			overflow: hidden;
+			list-style: none;
+			}
+			.AR ul li{
+  			float: right;
+			}
+			.AR ul li span{
+  			color: #c1ccd2;
+  			display: block;
+  			padding: 10px 10px;
+  			padding-left: 15px;
+	  		padding-right: 15px;
+  			font-size: 18px;
+			}
+			.AR ul li span:hover{
+  			color: #82A4C6;
+  			cursor: pointer;
+			}
+			.AR:hover{
+			-webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+			box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+			}
+}
+
+#FO{
+	background-color: #033649;
+  	width: 100%;
+  	position: relative;
+	margin-top: 20px;
+	overflow: hidden;
+	padding-bottom: 5px;
+	}
+	.FO{
+		width: 40%;
+		position:relative;
+		margin-top: 8;
+		margin-left: 15%;
+		margin-right: 1%;
+		float: left;
+		}
+	.FOL{
+		width: 40%;
+		height: 220px;
+		position:relative;
+		margin-right: 15%;
+		margin-right: 1%;
+		float: left;
+		}
+		.FO h1{
+			color: #f2f2f2;
+		  	font-size: 18px;
+		  	font-family:'Gisha', 'DengXian', 'Helvatica';
+		  	font-weight: bold;
+		  	text-align: center;
+		  	margin: 10px;
+			}
+		.FO ul{
+  			overflow: hidden;
+			list-style: none;
+			width: 50%;
+			margin: 0px auto;
+			}
+			.FO ul li{
+  			padding-top: 5px;
+			}
+			.FO ul li a{
+  			color: #f2f2f2;
+  			padding-left: 20px;
+  			font-size: 14px;
+  			font-family: 'AvantGarde LT Medium', 'Lato Semibold', 'Tahoma';
+			}
+			.FO ul li span{
+			margin-right: 10px;
+			font-size: 20px;
+			}
+			.FO ul li a:hover{
+  			color: #96D5F1;
+			}
+			.FOL img{
+			height: 100%;
+			}
+
+footer{
+	padding: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-color: #01161E;
+	}
+	footer p{
+			font-size: 14px;
+	  		font-family:'Arial';
+	  		color: white;
+	  		text-align: center;
+			}
+
+@media screen and (max-width:1880px ) {
+				#HE ul li:hover .USL{
+					right: 16.7%;
+					}
+				.ME ul li .CAS{
+					width: 11.5%;
+					}
+				#HE ul li.I{
+		  			width: 7.6%;
+					}
+				}
+
+@media screen and (max-width:1366px ) {
+				#HE ul li .USO{
+				width: 15%;
+				}
+				#ES{
+					width: 98%;
+					}
+				#HE ul{
+					width: 98%;
+					}
+				.ME ul{
+					width: 98%;
+				}
+				.CO{
+					margin-left: 5.6%;
+					margin-right: 5.6%;
+				}
+				.COT{ 
+					margin-left: 5.6%;
+					margin-right: 5.6%;
+				}
+				.AR{
+					margin-left: 5px;
+					width: 210px;
+					height: 353px;
+					}
+				.ME ul li .CAS{
+					width: 16%;
+					}
+				#HE ul li .USL{
+					width: 26%;
+					}
+				#HE ul li:hover .USL{
+					right: 10.4%;
+					}
+				#HE ul li.I{
+			  		width: 8.65%;
+					}
+				#ES h1{
+					margin: 18px;
+					}
+				
+@media screen and (max-width:1350px ) {
+				.AR{
+					margin-left: 4px;
+					}
+				.ME ul li .CAS{
+					width: 16%;
+					}
+				#HE ul li .USL{
+					width: 26%;
+					}
+				#HE ul li:hover .USL{
+					right: 10.4%;
+					}
+				#HE ul li.I{
+			  		width: 8.65%;
+					}
+				#HE ul li:hover .USL{
+					right: 10.7%;
+					}
+				}
+
+@media screen and (max-width:1280px ) {
+				.CO{
+					margin-left: 5.6%;
+					margin-right: 5.6%;
+				}
+				.COT{ 
+					margin-left: 5.6%;
+					margin-right: 5.6%;
+				}
+				.AR{
+					width: 200px;
+					height: 336px;
+					}
+				.ME ul li .CAS{
+					width: 17%;
+					}
+				#HE ul li:hover .USL{
+					right: 11.1%;
+					}
+				#HE ul li .USL{
+					width: 27%;
+					}
+				#HE ul li.I{
+			  		width: 9.2%;
+					}
+			}
+
+@media screen and (max-width:1024px ) {
+				#HE ul li .USO{
+				width: 18%;
+				}
+				.COT{
+					width: 28%;
+					margin-left: 2.5%;
+					margin-right: 2.5%;
+					}
+				.CO{
+					width: 28%;
+					height: 35vh;
+					margin-left: 2.5%;
+					margin-right: 2.5%;
+					}
+				.COT h2{
+		  			font-size: 15px;
+					}
+				.COT p{
+		  			font-size: 14px;
+					}
+				.CO img{
+					width: 100%;
+					}
+				.AR{
+					margin-left: 10%;
+					}
+				#ES h1{
+				  	font-size: 22px;
+				  	}
+				.ME ul li .CAS{
+					width: 22%;
+					}
+				.FO{
+					margin-left: 14%;
+					margin-right: 5%;
+					}
+				.FO ul{
+					width: 100%;
+					}
+				#HE ul li .USL{
+					width: 31%;
+					}
+				#HE ul li:hover .USL{
+					right: 13.6%;
+					}
+				#HE ul li.I{
+			  		width: 11.6%;
+					}
+				#HE ul li .USL{
+					width: 35%;
+					}
+				}
+
+
+@media screen and (max-width:900px ) {
+				#HE ul li .USO{
+				width: 25%;
+				}
+				.ME{
+					width: 40%;
+					height: 100vh;
+					left:-100%;
+					margin: 0px;
+					margin-top: 0px;
+					z-index:97;
+					}
+				.ME ul{
+					list-style-type: none;
+					width: 96%;
+					}
+				.ME ul li{
+					float: none;
+  					display: inline;
+  					padding-right: 1%;
+					}
+				.ME ul li a{
+					font-size: 15px;
+					}
+				#HE{
+					z-index:98;
+					}
+				#HE ul{
+					width: 95%;
+					}
+				#HE ul li a{
+					font-size: 18px;
+					padding-top: 20px;
+					}
+				#HE ul li span{
+					font-size: 20px;
+					}
+				#HE ul li.I{
+  					display: none;
+					}
+				#HE ul li.S{
+  					display: block;
+  					float: left;
+					}
+				.BT{
+					display: block;
+					}
+				#HE ul li.S a{
+  					padding-left: 60px;
+					}
+				.COT{
+					width: 28.3%;
+					}
+				.CO{
+					width: 28.3%;
+					height: 28vh;
+					}
+				.AR{
+					margin-left: 8%;
+					}
+				.ME ul li .CAS{
+					width: 100%;
+					position: relative;
+					}
+				.ME ul li .CAS a{
+					padding-left: 50px;
+					}
+				.ME ul li:hover .CAS{
+					display: none;
+					}
+				#HE ul li:hover .USL{
+					display:none;
+					}
+				.ME ul li .CAS{
+					border-top: 0;
+					}
+				#HE ul li a:hover{
+			  		background: #D0DCE9;
+			  		color: #3B71A6;
+					}
+				#HE ul li.S a:hover{
+			  		color: black;
+					}
+				footer p{
+					font-size: 12px;
+					}
+				.ME ul li.BU{
+					padding: 0px;
+					width: 100%;
+					float: left;
+					}
+				.ME ul li.BU .BA{
+					vertical-align: none;
+					white-space: none;
+			  		position: none;
+			  		width: 98%;
+			  		margin-top: 7%;
+					}
+				}
+
+@media screen and (max-width:768px ) {
+				.ME{
+					width: 45%;
+					}
+				.AR{
+					margin-left: 4%;
+					}
+				.CO{
+					display: none;
+					}
+				.COT{ 
+					width: 45%;
+					padding-top: 0%;
+					}
+				}
+
+@media screen and (max-width:720px ) {
+				#HE ul li .USO{
+				width: 25%;
+				right: 0%;
+				}
+				.ME{
+					width: 50%;
+					}
+				.AR{
+					margin-left: 3%;
+					}
+				#HE ul li a{
+			  		font-size: 0px;
+					padding-left
+			  		}
+				#HE ul li span{
+  					margin-right: 0px;
+					}
+				}
+
+@media screen and (max-width:480px ) {
+				#HE ul li .USO{
+				width: 40%;
+				}
+				#HE ul li .USO li a{
+				font-size: 13px;
+				}
+				#HE ul li .USO li span{
+				font-size: 15px;
+				}
+				.ME{
+					width: 60%;
+					}
+				.COT{
+					width: 90%;
+					margin-top: 0%;
+					}
+				#ES{
+					width: 100%;
+					padding-bottom: 5px;
+					}
+				.FOL{
+					display: none;
+					}
+				.FO{
+					width: 90%;
+					height: 30vh;
+					position:relative;
+					margin-top: 2px;
+					margin-left: 6%;
+					}
+				#ES h1{
+				  	font-size: 20px;
+					}
+				.AR{
+					width: 190px;
+					height: 320px;
+					margin-left: 4%;
+					}
+				.AR h2{		
+				  	font-size: 14px;
+					}
+				.AR h3{		
+				  	font-size: 14px;
+					}		
+				.AR h4{		
+				  	font-size: 9px;
+					}
+				input{
+				font-size: 14px;
+				}
+			}
+
+@media screen and (max-width:414px ) {
+				.AR{
+					margin-left: 2%;
+					}
+				.ME{
+					width: 65%;
+					}
+			}
+
+@media screen and (max-width:360px ) {
+				#HE ul li .USO{
+				width: 45%;
+				}
+				.ME{
+					width: 70%;
+					}
+				#HE ul li.S a{
+  					padding-left: 45px;
+					}
+				.AR{
+					width: 160px;
+					height: 269px;
+					margin-left: 3%;
+					}
+				#ES h1{
+				  	font-size: 16px;
+					}
+				.AR h2{		
+				  	font-size: 12px;
+					}
+				.AR h3{		
+				  	font-size: 12px;
+					}		
+				.AR h4{		
+				  	font-size: 7px;
+					}
+				.AR ul li span{
+		  			font-size: 13px;
+					}
+				.ME ul li a{
+		  			font-size: 15px;
+		  			}
+				.ME ul li span{
+					font-size: 16px;
+					}
+				.COT h2{
+		  			font-size: 14px;
+					}
+				.COT p{
+		  			font-size: 13px;
+					}
+				}
+
+@media screen and (max-width:320px ) {
+				#HE ul li .USO{
+				width: 55%;
+				}
+				.ME{
+					width: 75%;
+					}
+				.COT{
+					height: 35vh;
+					}
+				.FO{
+					height: 30vh;
+					}
+				.AR{
+					width: 150px;
+					height: 260px;
+					margin-left: 0%;
+					}
+				.FO ul li a{
+		  			font-size: 13px;
+					}
+				.FO ul li span{	
+					font-size: 16px;
+					}
+				.FO h1{
+					color: #f2f2f2;
+				  	font-size: 15px;
+					}
+				}
