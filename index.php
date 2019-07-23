@@ -24,4 +24,3 @@
 	    <script src="RECU/JS/Sty.js"></script>
 	</body>
 </html>
-
