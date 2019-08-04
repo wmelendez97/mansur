@@ -104,7 +104,8 @@ select:focus{
   		color: white;
 		}
 		#HE ul li.S a:hover{
-  		background: #D0DCE9;
+		background: #D0DCE9;
+		cursor: pointer;
 		}
 		#HE ul li.S{
   		display: none;
@@ -147,9 +148,11 @@ select:focus{
 		#HE ul li .USL #US a:hover{
 		background: #D0DCE9;
 		text-decoration: underline;
+		cursor: pointer;
 		}
 		#HE ul li .USL #US a.S:hover{
 		text-decoration: none;
+		cursor: pointer;
 		}
 		#HE ul li .USL #US ul li button{
     	font-size: 15px;
@@ -178,6 +181,7 @@ select:focus{
 		#HE ul li:hover .USL{
 		display:block;
 		right: 16.7%;
+		cursor: pointer;
 		}
 		#HE ul li .USO{
 		display:none;
@@ -239,6 +243,7 @@ select:focus{
 				.ME ul li a:hover{
 	  			background-color: #D0DCE9;
 	  			color: black;
+				cursor: pointer;
 				}
 				.ME ul li span{
 				margin-right: 8px;
@@ -251,6 +256,7 @@ select:focus{
 				}
 				.ME ul li.CAM:hover span.icon-fle{
 				color: #D0DCE9;
+				cursor: pointer;
 				}
 				.ME ul li .CAS{
 				display:none;
@@ -261,6 +267,7 @@ select:focus{
 				}
 				.ME ul li:hover .CAS{
 				display:block;
+				cursor: pointer;
 				}
 				.ME ul li .CAS li{
 				display: block;
@@ -305,9 +312,11 @@ select:focus{
 				}
 				.ME ul li.BU .BA:hover button.IC, .ME ul li.BU .BA:active button.IC, .ME ul li.BU .BA:focus button.IC{
 				background: #D0DCE9;
+				cursor: pointer;
 				}
   				.ME ul li.BU .BA:hover button.IC:hover{
-    			background: #D0DCE9;
+				background: #D0DCE9;
+				cursor: pointer;
   				}
 				.ME ul li.BU .BA button.IC span.icon-bus{
 				color: #4f5b66;
