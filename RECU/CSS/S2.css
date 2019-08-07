@@ -28,6 +28,13 @@
   	font-size: 18px;
   	font-family:'Aller', 'Bahnschrift SemiBold', 'Arial';
 	}
+	#ES1 p .M{
+		color: black;
+		margin: auto;
+		font-size: 16px;
+		font-family:'Aller', 'Bahnschrift SemiBold', 'Arial';
+		text-align: center;
+	}
 	#ES1 iframe{
   	margin: 10px 60px 10px 60px;
 	}
