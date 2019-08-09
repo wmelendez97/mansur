@@ -1,6 +1,6 @@
 <?php
       include "ELE/BD.php";
-      $id = $_GET['ge'];
+      $id = $_GET['gen'];
       $sql = "SELECT * FROM articulo WHERE ge_id = '$id'";
       $result = mysqli_query($con,$sql);
 

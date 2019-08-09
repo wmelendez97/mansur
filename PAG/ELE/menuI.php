@@ -1,3 +1,4 @@
+<?php include "PAG/ELE/BD.php";?>
 <div class="BT">
 <a href="#Menu"><span class="icon-menu"></span></a>
 </div>
@@ -41,8 +42,12 @@
         <ul>
             <li class="BU">
                 <div class="BA">
-                  <button class="IC"><span class="icon-bus"></span></button>
-                  <input type="search" id="BUS" placeholder="Buscar..." />
+                    
+                <form method="POST" action=""> 
+                  <button class="IC" name="buscar" value="buscar"><span class="icon-bus"></span></button>
+                  <input type="search" id="BUS" name="busqueda" placeholder="Buscar..." />
+                </form>
+                
                 </div>
             </li>
             <li><a href="index.php"><span class="icon-ini"></span>INICIO</a></li>
@@ -50,7 +55,6 @@
                 <a id="ca"><span class="icon-eti"></span>CATEGORÍAS<span class="icon-fle"></span></a>
                 <ul class="CAS">
                     <?php
-                    include "PAG/ELE/BD.php";
                     $sql = "SELECT * FROM categoria";
                     $result = mysqli_query($con,$sql);
                     while($mostrar=mysqli_fetch_array($result)){ 

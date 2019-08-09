@@ -35,17 +35,5 @@ function main(){
 		window.location='comprar.php';
 	});
 
-	$('#Ofe').click(function(){
-		window.location='PAG/ofertas.php';
-	});
-
-	$('#Ella').click(function(){
-		window.location='PAG/genero.php?gen=1';
-	});
-
-	$('#El').click(function(){
-		window.location='PAG/genero.php?gen=2';
-	});
-
 
 };

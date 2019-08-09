@@ -88,7 +88,7 @@ if(empty($nombre) || empty($username) || empty($correo) || empty($contraseña) |
 		exit();
 	}
 	//existing email address in our database
-	$sql = "SELECT * FROM usuario WHERE correo = '$correo' LIMIT 1" ;
+	
 	$check_query = mysqli_query($con,$sql);
 	$count_email = mysqli_num_rows($check_query);
 	if($count_email > 0){
