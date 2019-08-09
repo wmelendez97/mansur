@@ -1,871 +1,886 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-*	{
-	margin: 0;
-	padding: 0;
-	}
-#ES1{
-	width: 80%;
-	background-color: #ffffff;
-	position: relative;
-	margin: auto;
-	margin-top: 125px;
-	border-top: 4px solid rgba(193,204,210);
-	padding-bottom: 5px;
-	overflow: hidden;
-	}
-	#ES1 h1{
-	color: black;
-  	font-size: 25px;
- 	font-family:'Gisha', 'DengXian',  'Helvatica';
-  	font-weight: bold;
-  	text-align: center;
-  	margin: 20px;
-	}
-	#ES1 p{
-	color: black;
-	text-align: justify;
-  	margin: 20px 80px 20px 80px;
-  	font-size: 18px;
-  	font-family:'Aller', 'Bahnschrift SemiBold', 'Arial';
-	}
-	#ES1 p .M{
-		color: black;
+	*	{
+		margin: 0;
+		padding: 0;
+		}
+	#ES1{
+		width: 80%;
+		background-color: #ffffff;
+		position: relative;
 		margin: auto;
-		font-size: 16px;
-		font-family:'Aller', 'Bahnschrift SemiBold', 'Arial';
+		margin-top: 125px;
+		border-top: 4px solid rgba(193,204,210);
+		padding-bottom: 5px;
+		overflow: hidden;
+		}
+		#ES1 h1{
+		color: black;
+		  font-size: 25px;
+		 font-family:'Gisha', 'DengXian',  'Helvatica';
+		  font-weight: bold;
+		  text-align: center;
+		  margin: 20px;
+		}
+		#ES1 p{
+		color: black;
+		text-align: justify;
+		  margin: 20px 80px 20px 80px;
+		  font-size: 18px;
+		  font-family:'Aller', 'Bahnschrift SemiBold', 'Arial';
+		}
+		#ES1 iframe{
+		  margin: 10px 60px 10px 60px;
+		}
+	
+	#ES1 .REG .Alerta{
+		width: 90%;
+		background-color: #ffffff;
+		margin: auto;
+		padding-bottom: 5px;
+		}
+		#ES1 .REG .Alerta h1{
+		color: black;
+		  font-size: 14px;
+		 font-family:'Gisha', 'DengXian',  'Helvatica';
+		  font-weight: bold;
+		  text-align: center;
+		  margin: 20px;
+		}
+		#ES1 .REG .Alerta p{
+		color: black;
 		text-align: center;
-	}
-	#ES1 iframe{
-  	margin: 10px 60px 10px 60px;
-	}
-
-.LOG{
-	width: 50%;
-	position:relative;
-	float: left;
-	text-align: center;
-	}
-.LOI{
-	width: 50%;
-	position:relative;
-	float: right;
-	text-align: center;
-	}
-	.LOI img{
-	height: 60vh;
-	margin: auto;
-	}
-	.LOG h4{
-	color: black;
-	font-size: 25px;
-	font-family:'Gisha', 'DengXian',  'Helvatica';
-	font-weight: bold;
-	text-align: center;
-	margin: 9%;
-	}
-	.LOG h3{
-	color: black;
-	text-align: left;
-	margin-left: 23%;
-	margin-bottom: 2%;
-	margin-top: 2%;
-	font-size: 18px;
-	font-family:'Aller', 'Bahnschrift SemiBold', 'Arial';
-	}
-	.LOG input{
-	font-size: 14px;
-	width: 60%;
-	padding: 4px;
-	margin-left: 3.5%;
-	}
-	.LOG input{
-	font-size: 14px;
-	width: 60%;
-	padding: 4px;
-	margin-left: 3.5%;
-	}
-	.LOG button{
-	font-family:'Aller', 'Bahnschrift SemiBold', 'Arial';
-	color: white;
-    font-size: 18px;
-    padding: 6px;
-	margin-bottom: 2%;
-	margin-top: 2%;
-	background: #3B71A6;
-	border-radius: 5px;
-	width: 85%;
-	border: none;
-	-webkit-transition: all .15s ease;
-	-moz-transition: all .15s ease;
-	-ms-transition: all .15s ease;
-	-o-transition: all .15s ease;
-	transition: all .15s ease;
-    }
-    .LOG button:hover{
-	background-color: #82a4c6;
-    }
-    .LOG ul a.S{
-	font-size: 16px;
-	padding: 5px;
-	font-family:'AvantGarde LT Medium', 'Lato Semibold', 'Tahoma';
-	color: black;
-	float: right;
-	margin-top: 2%;
-	margin-right: 1%;
-	}
-	.LOG ul input[type="checkbox"]{
-	width: 5%;
-	float: right;
-	margin-top: 4%;
-	margin-left : 1%;
-	margin-right : 20%;
-	}
-	.LOG ul{
-	width: 60%;
-	padding: 4px;
-	margin-left: 21%;
-	text-align: center;
-	}
-	.LOG ul li a{
-	font-size: 16px;
-	padding: 5px;
-	font-family:'AvantGarde LT Medium', 'Lato Semibold', 'Tahoma';
-	color: #3B71A6;
-	padding: 6px;
-	align-self: center;
-	}
-	.LOG ul li a:hover{
-	text-decoration: underline;
-	}
-.REG{
-	width: 50%;
-	position:relative;
-	float: left;
-	text-align: center;
-	}
-	.REG h4{
-	color: black;
-	font-size: 25px;
-	font-family:'Gisha', 'DengXian',  'Helvatica';
-	font-weight: bold;
-	margin: 2%;
-	}
-	.REG h3{
-	color: black;
-	text-align: left;
-	margin-left: 23%;
-	margin-bottom: 2%;
-	margin-top: 2%;
-	font-size: 18px;
-	font-family:'Aller', 'Bahnschrift SemiBold', 'Arial';
-	}
-	.REG input{
-	font-size: 14px;
-	width: 60%;
-	padding: 4px;
-	margin-left: 3.5%; 
-	}
-	.REG button{
-	font-family:'Aller', 'Bahnschrift SemiBold', 'Arial';
-	color: white;
-    font-size: 18px;
-    padding: 6px;
-	margin-bottom: 2%;
-	margin-top: 5%;
-	background: #3B71A6;
-	border-radius: 5px;
-	width: 85%;
-	border: none;
-	-webkit-transition: all .15s ease;
-	-moz-transition: all .15s ease;
-	-ms-transition: all .15s ease;
-	-o-transition: all .15s ease;
-	transition: all .15s ease;
-    }
-    .REG button:hover{
-	background-color: #82a4c6;
-    }
-	.REG ul{
-	width: 60%;
-	padding: 4px;
-	margin-left: 21%;
-	text-align: center;
-	}
-	.REG ul li a{
-	font-size: 16px;
-	padding: 5px;
-	font-family:'AvantGarde LT Medium', 'Lato Semibold', 'Tahoma';
-	color: #3B71A6;
-	padding: 6px;
-	align-self: center;
-	}
-	.REG ul li a:hover{
-	text-decoration: underline;
-	}
-
-#ART{
-	width: 98%;
-	background-color: #ffffff;
-	position: relative;
-	margin: 0 auto;
-	margin-top: 125px;
-	border-top: 4px solid rgba(193,204,210);
-	padding-bottom: 5px;
-	overflow: hidden;
-	}
-	#ART button.FI{
-	float: left;
-	position: absolute;
-	background: none;
-	border: none;
-	padding: 10px;
-	z-index: 1;
-	display: none;
-	}
-	.FI .icon-fil{
-	padding: 4px;
-	color: #033649;
-	font-size: 30px;
-	}
-	#ART button.FI2{
-	float: left;
-	position: absolute;
-	background: none;
-	border: none;
-	padding: 10px;
-	z-index: 1;
-	display: none;
-	}
-	.FI2 .icon-fil{
-	padding: 4px;
-	color: #033649;
-	font-size: 30px;
-	}
-	.AC{
-	width: 18%;
-	position:relative;
-	float: left;
-	}
-	.AP{
-	width: 82%;
-	position:relative;
-	float: left;
+		margin: 20px 80px 20px 80px;
+		font-size: 12px;
+		font-family:'Aller', 'Bahnschrift SemiBold', 'Arial';
 		}
-			.AP h1{
-			color: black;
-  			font-size: 25px;
-	  		font-family:'Gisha', 'DengXian',  'Helvatica';
-	  		font-weight: bold;
-	  		text-align: center;
-	  		margin: 20px;
-  			margin-bottom: 40px;
-			}
-			.AC h1{
-			color: #f2f2f2;
-			background-color: #033649;
-		  	font-size: 20px;
-		  	font-family:'Gisha', 'DengXian',  'Helvatica';
-		  	font-weight: bold;
-		  	text-align: center;
-		  	margin: 10px;
-		  	margin-top: 10px;
-		  	width: 95%;
-		  	padding: 10px 0px 10px 0px;
-			}
-			.AC ul{
-  			overflow: hidden;
-			list-style: none;
-			width: 95%;
-			margin: 0 auto;
-			}
-			.AC ul li{
-  			padding: 10px 20px 10px 20px;
-			}
-			.AC ul li a{
-  			color: black;
-  			font-size: 18px;
-  			font-family: 'AvantGarde LT Medium', 'Lato Semibold', 'Tahoma';
-			}
-			.AC ul li input[type="checkbox"]{
-			margin-right: 5px;
-			}
-			.AC button{
-			font-family:'Aller', 'Bahnschrift SemiBold', 'Arial';
-			color: white;
-	    	font-size: 18px;
-	    	padding: 6px;
-		  	margin-bottom: 2%;
-		  	margin-top: 2%;
-		  	margin-left: 9%;
-			background: #3B71A6;
-			border-radius: 5px;
-			width: 85%;
-			border: none;
-			-webkit-transition: all .15s ease;
-		    -moz-transition: all .15s ease;
-		    -ms-transition: all .15s ease;
-		    -o-transition: all .15s ease;
-		    transition: all .15s ease;
-	    	}
-	    	.AC button:hover{
-			background-color: #82a4c6;
-	    	}
-
-	.DEF{
+	
+	.LOG{
 		width: 50%;
 		position:relative;
 		float: left;
+		text-align: center;
 		}
-		.DEF img{
-			width: 70%;
-			margin-left: 15%;
+	.LOI{
+		width: 50%;
+		position:relative;
+		float: right;
+		text-align: center;
 		}
-	.DET{
+		.LOI img{
+		height: 60vh;
+		margin: auto;
+		}
+		.LOG h4{
+		color: black;
+		font-size: 25px;
+		font-family:'Gisha', 'DengXian',  'Helvatica';
+		font-weight: bold;
+		text-align: center;
+		margin: 9%;
+		}
+		.LOG h3{
+		color: black;
+		text-align: left;
+		margin-left: 23%;
+		margin-bottom: 2%;
+		margin-top: 2%;
+		font-size: 18px;
+		font-family:'Aller', 'Bahnschrift SemiBold', 'Arial';
+		}
+		.LOG input{
+		font-size: 14px;
+		width: 60%;
+		padding: 4px;
+		margin-left: 3.5%;
+		}
+		.LOG input{
+		font-size: 14px;
+		width: 60%;
+		padding: 4px;
+		margin-left: 3.5%;
+		}
+		.LOG button{
+		font-family:'Aller', 'Bahnschrift SemiBold', 'Arial';
+		color: white;
+		font-size: 18px;
+		padding: 6px;
+		margin-bottom: 2%;
+		margin-top: 2%;
+		background: #3B71A6;
+		border-radius: 5px;
+		width: 85%;
+		border: none;
+		-webkit-transition: all .15s ease;
+		-moz-transition: all .15s ease;
+		-ms-transition: all .15s ease;
+		-o-transition: all .15s ease;
+		transition: all .15s ease;
+		}
+		.LOG button:hover{
+		background-color: #82a4c6;
+		}
+		.LOG ul a.S{
+		font-size: 16px;
+		padding: 5px;
+		font-family:'AvantGarde LT Medium', 'Lato Semibold', 'Tahoma';
+		color: black;
+		float: right;
+		margin-top: 2%;
+		margin-right: 1%;
+		}
+		.LOG ul input[type="checkbox"]{
+		width: 5%;
+		float: right;
+		margin-top: 4%;
+		margin-left : 1%;
+		margin-right : 20%;
+		}
+		.LOG ul{
+		width: 60%;
+		padding: 4px;
+		margin-left: 21%;
+		text-align: center;
+		}
+		.LOG ul li a{
+		font-size: 16px;
+		padding: 5px;
+		font-family:'AvantGarde LT Medium', 'Lato Semibold', 'Tahoma';
+		color: #3B71A6;
+		padding: 6px;
+		align-self: center;
+		}
+		.LOG ul li a:hover{
+		text-decoration: underline;
+		}
+	.REG{
 		width: 50%;
 		position:relative;
 		float: left;
+		text-align: center;
 		}
-			.DET ul{
-  			overflow: hidden;
-			list-style: none;
-			width: 80%;
-			margin: 0px auto;
-			margin-top: 3%;
+		.REG h4{
+		color: black;
+		font-size: 25px;
+		font-family:'Gisha', 'DengXian',  'Helvatica';
+		font-weight: bold;
+		margin: 2%;
+		}
+		.REG h3{
+		color: black;
+		text-align: left;
+		margin-left: 23%;
+		margin-bottom: 2%;
+		margin-top: 2%;
+		font-size: 18px;
+		font-family:'Aller', 'Bahnschrift SemiBold', 'Arial';
+		}
+		.REG input{
+		font-size: 14px;
+		width: 60%;
+		padding: 4px;
+		margin-left: 3.5%; 
+		}
+		.REG button{
+		font-family:'Aller', 'Bahnschrift SemiBold', 'Arial';
+		color: white;
+		font-size: 18px;
+		padding: 6px;
+		margin-bottom: 2%;
+		margin-top: 5%;
+		background: #3B71A6;
+		border-radius: 5px;
+		width: 85%;
+		border: none;
+		-webkit-transition: all .15s ease;
+		-moz-transition: all .15s ease;
+		-ms-transition: all .15s ease;
+		-o-transition: all .15s ease;
+		transition: all .15s ease;
+		}
+		.REG button:hover{
+		background-color: #82a4c6;
+		}
+		.REG ul{
+		width: 60%;
+		padding: 4px;
+		margin-left: 21%;
+		text-align: center;
+		}
+		.REG ul li a{
+		font-size: 16px;
+		padding: 5px;
+		font-family:'AvantGarde LT Medium', 'Lato Semibold', 'Tahoma';
+		color: #3B71A6;
+		padding: 6px;
+		align-self: center;
+		}
+		.REG ul li a:hover{
+		text-decoration: underline;
+		}
+	
+	#ART{
+		width: 98%;
+		background-color: #ffffff;
+		position: relative;
+		margin: 0 auto;
+		margin-top: 125px;
+		border-top: 4px solid rgba(193,204,210);
+		padding-bottom: 5px;
+		overflow: hidden;
+		}
+		#ART button.FI{
+		float: left;
+		position: absolute;
+		background: none;
+		border: none;
+		padding: 10px;
+		z-index: 1;
+		display: none;
+		}
+		.FI .icon-fil{
+		padding: 4px;
+		color: #033649;
+		font-size: 30px;
+		}
+		#ART button.FI2{
+		float: left;
+		position: absolute;
+		background: none;
+		border: none;
+		padding: 10px;
+		z-index: 1;
+		display: none;
+		}
+		.FI2 .icon-fil{
+		padding: 4px;
+		color: #033649;
+		font-size: 30px;
+		}
+		.AC{
+		width: 18%;
+		position:relative;
+		float: left;
+		}
+		.AP{
+		width: 82%;
+		position:relative;
+		float: left;
 			}
-			.DET ul li{
-  			margin-left: 10%;
-  			margin-top:3%;
-			}
-			.DET ul li h2{
-  			float: left;
-  			color: black;
-  			font-size: 22px;
-  			font-family: 'Bahnschrift SemiBold', 'Arial';
-  			text-align: left;
-			}
-			.DET ul li h3{
-  			float: left;
-  			font-size: 22px;
-  			font-family:'Bahnschrift SemiBold', 'Arial';
-  			text-align: left;
-  			margin-left: 5%;
-  			color: #5e5e5e;
-			}
-			.DET ul.T{
-			margin: 0px auto;
-			}
-			.DET ul.B{
-			margin: 0px auto;
-			}
-			.DET ul.T li{
-			float: left;
-			margin-left: 2%;
-			}
-			.DET ul.T li a{
-			margin-right: 1%;
-			font-size: 18px;
-  			font-family:'Bahnschrift SemiBold', 'Arial';
-  			color: #5e5e5e;
-			}
-			.DET ul.T li.H{
-			float: left;
-			margin-left: 0%;
-			margin-right: 5%;
-			}
-			.DET ul.B li{
-			float: left;
-			width: 40%;	
-  			margin-top:7%;
-  			margin-bottom: 4%;
-			}
-			.DET ul.B li.S{
-			float: left;
-			margin-left: 0%;
-			width: 40%;	
-  			margin-top:7%;
-  			margin-bottom: 4%;
-			}
-			.DET ul.B li span{
-  			color: white;
-  			font-size: 20px;
-  			margin-right: 10%;
-			}
-			.DET ul.B li button#F{
-			font-family:'Aller', 'Bahnschrift SemiBold', 'Arial';
-			color: white;
-	    	font-size: 25px;
-	    	padding: 15px;
-			background: #82a4c6;
-			border-top-left-radius: 5px;
-			border-bottom-left-radius: 5px;
-			width: 100%;
-			border: none;
-			-webkit-transition: all .15s ease;
-		    -moz-transition: all .15s ease;
-		    -ms-transition: all .15s ease;
-		    -o-transition: all .15s ease;
-		    transition: all .15s ease;
-	    	}
-	    	.DET ul li button#F:hover{
-			background-color: #96d5f1;
-	    	}
-	    	.DET ul.B li button#C{
-			font-family:'Aller', 'Bahnschrift SemiBold', 'Arial';
-			color: white;
-	    	font-size: 25px;
-	    	padding: 15px;
-			background: #3B71A6;
-			border-top-right-radius: 5px;
-			border-bottom-right-radius: 5px;
-			width: 100%;
-			border: none;
-			-webkit-transition: all .15s ease;
-		    -moz-transition: all .15s ease;
-		    -ms-transition: all .15s ease;
-		    -o-transition: all .15s ease;
-		    transition: all .15s ease;
-	    	}
-	    	.DET ul li button#C:hover{
-			background-color: #96d5f1;
-	    	}
-
-@media screen and (max-width:1366px ) {
-				#ES1{
-				width: 98%;
-				}
-				#ES1 p{
-  				margin: 20px 40px 20px 40px;
-				}
-				#ES1 iframe{
-  				margin: 10px 40px 10px 40px;
-				}
-				.AC{
-				width: 17%;
-				}
-				.AP{
-				width: 83%;
-				position:relative;
-				float: left;
+				.AP h1{
+				color: black;
+				  font-size: 25px;
+				  font-family:'Gisha', 'DengXian',  'Helvatica';
+				  font-weight: bold;
+				  text-align: center;
+				  margin: 20px;
+				  margin-bottom: 40px;
 				}
 				.AC h1{
-				font-size: 18px;
-				margin: 10px;
-				margin-top: 10px;
+				color: #f2f2f2;
+				background-color: #033649;
+				  font-size: 20px;
+				  font-family:'Gisha', 'DengXian',  'Helvatica';
+				  font-weight: bold;
+				  text-align: center;
+				  margin: 10px;
+				  margin-top: 10px;
+				  width: 95%;
+				  padding: 10px 0px 10px 0px;
+				}
+				.AC ul{
+				  overflow: hidden;
+				list-style: none;
+				width: 95%;
+				margin: 0 auto;
 				}
 				.AC ul li{
-		  		padding: 10px 20px 10px 20px;
+				  padding: 10px 20px 10px 20px;
 				}
 				.AC ul li a{
-		  		font-size: 16px;
+				  color: black;
+				  font-size: 18px;
+				  font-family: 'AvantGarde LT Medium', 'Lato Semibold', 'Tahoma';
 				}
-				.LOG h3{
-				margin-left: 16%;
+				.AC ul li input[type="checkbox"]{
+				margin-right: 5px;
 				}
-				.LOG input{
-				width: 75%;
+				.AC button{
+				font-family:'Aller', 'Bahnschrift SemiBold', 'Arial';
+				color: white;
+				font-size: 18px;
+				padding: 6px;
+				  margin-bottom: 2%;
+				  margin-top: 2%;
+				  margin-left: 9%;
+				background: #3B71A6;
+				border-radius: 5px;
+				width: 85%;
+				border: none;
+				-webkit-transition: all .15s ease;
+				-moz-transition: all .15s ease;
+				-ms-transition: all .15s ease;
+				-o-transition: all .15s ease;
+				transition: all .15s ease;
 				}
-				.LOG button{
-				width: 90%;
+				.AC button:hover{
+				background-color: #82a4c6;
 				}
-				.REG h3{
-				margin-left: 16%;
-				}
-				.REG input{
-				width: 75%;
-				}
-				.REG button{
-				width: 90%;
-				}
-				.LOG ul input[type="checkbox"]{
-				margin-right: 5%;
-				}
-				.DET ul{
-				width: 90%;
-				}
-				.DET ul li{
-  				margin-left: 5%;
-				}
-				.DET ul.B li{
-				margin-left: 8%;
-				}
+	
+		.DEF{
+			width: 50%;
+			position:relative;
+			float: left;
 			}
-
-@media screen and (max-width:1280px ) {
-
-			}
-
-@media screen and (max-width:1024px ) {
-			#ES1 h1{
-				  	font-size: 22px;
-				  	}
-			#ART h1{
-				  	font-size: 22px;
-				  	}
-			.LOG h3{
-				margin-left: 10%;
-				}
-			.LOG input{
-				width: 90%;
-				}
-			.LOG button{
-				width: 95%;
-				}
-			.REG h3{
-				margin-left: 10%;
-				}
-			.REG input{
-				width: 90%;
-				}
-			.REG button{
-				width: 100%;
-				}
-			.LOG ul input[type="checkbox"]{
-				margin-right: 1%;
-				margin-top: 5%;
-				}
-			.DET ul li h2{
-	  			font-size: 20px;
-				}
-			.DET ul li h3{
-	  			font-size: 20px;
-				}
-			.DET ul.T li a{
-				font-size: 16px;
-				}
-			.DET ul.B li span{
-	  			font-size: 18px;
-	  			margin-right: 7%;
-				}
-			.DET ul.B li button#F{
-		    	font-size: 22px;
-		    	}
-		    .DET ul.B li button#C{
-		    	font-size: 22px;
-		    	}
-			}
-
-@media screen and (max-width:900px ) {
-				#ES1{
-				margin-top: 75px;
-				}
-				#ART{
-				margin-top: 75px;
-				}
-				.AP{
-				width: 100%;
-				}
-				.AP h1{
-			  	font-size: 20px;
-				}
-				#ES1 h1{
-  				font-size: 20px;
-				}
-				#ES1 p{
-  				font-size: 18px;
-				}
-				.DEF{
-				width: 100%;
-				float: auto;
-				}
-				.DET{
-				width: 100%;
-				float: auto;
-				}
-				#ES1 p{
-		  		margin: 10px 20px 10px 20px;
-				}
-				#ES1 iframe{
-  				margin: 10px 20px 10px 20px;
-				}
-				.LOI{
-				display: none;
-				}
-				.LOG h4{
-				margin: 5%;
-				}
-				.LOG h3{
-				margin-left: 10%;
-				}
-				.LOG{
-				width: 100%;
-				}
-				.REG{
-				width: 100%;
-				}
-				.LOG h3{
+			.DEF img{
+				width: 70%;
 				margin-left: 15%;
-				}
-				.LOG input{
-				width: 75%;
-				}
-				.LOG button{
-				width: 75%;
-				}
-				.REG h3{
-				margin-left: 10%;
-				}
-				.REG input{
-				width: 75%;
-				}
-				.REG button{
-				width: 75%;
-				}
-				.LOG ul input[type="checkbox"]{
-				margin-right: 13%;
-				margin-top: 4%;
-				}
-				.AC{
-				width: 100%;
-				height: 75vh;
-				display: none;
-				}
-				#ART button.FI{
-				display: block;
-				}
-				.FI{
-				margin: 1%;
-				}
-				.FI2{
-				margin: 1%;
-				}
 			}
-
-@media screen and (max-width:768px ) {
+		.DET{
+			width: 50%;
+			position:relative;
+			float: left;
+			}
+				.DET ul{
+				  overflow: hidden;
+				list-style: none;
+				width: 80%;
+				margin: 0px auto;
+				margin-top: 3%;
+				}
 				.DET ul li{
-				float: auto;
-				margin-left: 0;
+				  margin-left: 10%;
+				  margin-top:3%;
 				}
-				#ES1 p{
-				font-size: 16px;
+				.DET ul li h2{
+				  float: left;
+				  color: black;
+				  font-size: 22px;
+				  font-family: 'Bahnschrift SemiBold', 'Arial';
+				  text-align: left;
 				}
-				.LOG h3{
-				margin-left: 12%;
-				}
-				.LOG input{
-				width: 80%;
-				}
-				.LOG button{
-				width: 80%;
-				}
-				.REG h3{
-				margin-left: 12%;
-				}
-				.REG input{
-				width: 80%;
-				}
-				.REG button{
-				width: 80%;
-				}
-				.LOG ul input[type="checkbox"]{
-				margin-right: 10%;
-				margin-top: 4%;
+				.DET ul li h3{
+				  float: left;
+				  font-size: 22px;
+				  font-family:'Bahnschrift SemiBold', 'Arial';
+				  text-align: left;
+				  margin-left: 5%;
+				  color: #5e5e5e;
 				}
 				.DET ul.T{
-				width: 100%;
+				margin: 0px auto;
+				}
+				.DET ul.B{
+				margin: 0px auto;
 				}
 				.DET ul.T li{
+				float: left;
 				margin-left: 2%;
+				}
+				.DET ul.T li a{
+				margin-right: 1%;
+				font-size: 18px;
+				  font-family:'Bahnschrift SemiBold', 'Arial';
+				  color: #5e5e5e;
+				}
+				.DET ul.T li.H{
+				float: left;
+				margin-left: 0%;
+				margin-right: 5%;
 				}
 				.DET ul.B li{
-				margin-left: 9%;
+				float: left;
+				width: 40%;	
+				  margin-top:7%;
+				  margin-bottom: 4%;
 				}
-
-			}	
-@media screen and (max-width:720px ) {
+				.DET ul.B li.S{
+				float: left;
+				margin-left: 0%;
+				width: 40%;	
+				  margin-top:7%;
+				  margin-bottom: 4%;
+				}
+				.DET ul.B li span{
+				  color: white;
+				  font-size: 20px;
+				  margin-right: 10%;
+				}
+				.DET ul.B li button#F{
+				font-family:'Aller', 'Bahnschrift SemiBold', 'Arial';
+				color: white;
+				font-size: 25px;
+				padding: 15px;
+				background: #82a4c6;
+				border-top-left-radius: 5px;
+				border-bottom-left-radius: 5px;
+				width: 100%;
+				border: none;
+				-webkit-transition: all .15s ease;
+				-moz-transition: all .15s ease;
+				-ms-transition: all .15s ease;
+				-o-transition: all .15s ease;
+				transition: all .15s ease;
+				}
+				.DET ul li button#F:hover{
+				background-color: #96d5f1;
+				}
+				.DET ul.B li button#C{
+				font-family:'Aller', 'Bahnschrift SemiBold', 'Arial';
+				color: white;
+				font-size: 25px;
+				padding: 15px;
+				background: #3B71A6;
+				border-top-right-radius: 5px;
+				border-bottom-right-radius: 5px;
+				width: 100%;
+				border: none;
+				-webkit-transition: all .15s ease;
+				-moz-transition: all .15s ease;
+				-ms-transition: all .15s ease;
+				-o-transition: all .15s ease;
+				transition: all .15s ease;
+				}
+				.DET ul li button#C:hover{
+				background-color: #96d5f1;
+				}
+	
+	@media screen and (max-width:1366px ) {
+					#ES1{
+					width: 98%;
+					}
+					#ES1 p{
+					  margin: 20px 40px 20px 40px;
+					}
+					#ES1 iframe{
+					  margin: 10px 40px 10px 40px;
+					}
+					.AC{
+					width: 17%;
+					}
+					.AP{
+					width: 83%;
+					position:relative;
+					float: left;
+					}
+					.AC h1{
+					font-size: 18px;
+					margin: 10px;
+					margin-top: 10px;
+					}
+					.AC ul li{
+					  padding: 10px 20px 10px 20px;
+					}
+					.AC ul li a{
+					  font-size: 16px;
+					}
+					.LOG h3{
+					margin-left: 16%;
+					}
+					.LOG input{
+					width: 75%;
+					}
+					.LOG button{
+					width: 90%;
+					}
+					.REG h3{
+					margin-left: 16%;
+					}
+					.REG input{
+					width: 75%;
+					}
+					.REG button{
+					width: 90%;
+					}
+					.LOG ul input[type="checkbox"]{
+					margin-right: 5%;
+					}
+					.DET ul{
+					width: 90%;
+					}
+					.DET ul li{
+					  margin-left: 5%;
+					}
+					.DET ul.B li{
+					margin-left: 8%;
+					}
+				}
+	
+	@media screen and (max-width:1280px ) {
+	
+				}
+	
+	@media screen and (max-width:1024px ) {
+				#ES1 h1{
+						  font-size: 22px;
+						  }
+				#ART h1{
+						  font-size: 22px;
+						  }
 				.LOG h3{
-				margin-left: 10%;
-				}
+					margin-left: 10%;
+					}
 				.LOG input{
-				width: 85%;
-				}
+					width: 90%;
+					}
 				.LOG button{
-				width: 85%;
-				}
+					width: 95%;
+					}
 				.REG h3{
-				margin-left: 10%;
-				}
+					margin-left: 10%;
+					}
 				.REG input{
-				width: 85%;
-				}
+					width: 90%;
+					}
 				.REG button{
-				width: 85%;
-				}
+					width: 100%;
+					}
 				.LOG ul input[type="checkbox"]{
-				margin-right: 8%;
-				margin-top: 4%;
-				}
-			}
-
-@media screen and (max-width:480px ) {
-			#ES1 h1{
-				  	font-size: 20px;
+					margin-right: 1%;
+					margin-top: 5%;
 					}
-			#ART h1{
-				  	font-size: 20px;
+				.DET ul li h2{
+					  font-size: 20px;
 					}
-			#ES1 p{
-		  		margin: 7px 15px 7px 15px;
-				}
-			#ES1 iframe{
-  				margin: 7px 15px 7px 15px;
-				}
-			#ES1{
-				width: 100%;
-				padding-bottom: 5px;
-				}
-			#ART{
-				width: 100%;
-				padding-bottom: 5px;
-				}
-			.LOG h4{
-				font-size: 20px;
-				}
-			.LOG h3{
-				margin-left: 2%;
-				font-size: 16px;
-				}
-			.LOG input{
-				width: 100%;
-				margin-left: 0%;
-				}
-			.LOG button{
-				width: 95%;
-				}
-			.REG h3{
-				margin-left: 2%;
-				font-size: 16px;
-				}
-			.REG input{
-				width: 100%;
-				margin-left: 0%;
-				}
-			.REG button{
-				width: 100%;
-				}
-			.LOG ul input[type="checkbox"]{
-				margin-right: 4%;
-				margin-top: 5%;
-				}
-			.LOG ul a.S{
-				font-size: 14px;
-				}
-			.LOG ul li a{
-				font-size: 14px;
-				}
-			.REG ul li a{
-				font-size: 14px;
-				}
-			.FI{
-				margin: 2.2%;
-				}
-			.FI2{
-				margin: 2.2%;
-				}
-			.FI .icon-fil{
-				font-size: 25px;
-				color: #949da2;
-				}
-			.FI2 .icon-fil{
-				font-size: 25px;
-				color: #949da2;
-				}
-			.AC h1{
-				font-size: 18px;
-				}
-			.AC ul li a{
-				font-size: 16px;
-				}
-			.AC{
-				height: 80vh;
-				}		
-			}
-
-@media screen and (max-width:360px ) {
-			#ES1 h1{
-				  	font-size: 16px;
+				.DET ul li h3{
+					  font-size: 20px;
 					}
-			#ES1 p{
-				  	font-size: 13px;
+				.DET ul.T li a{
+					font-size: 16px;
 					}
-			#ART h1{
-				  	font-size: 16px;
+				.DET ul.B li span{
+					  font-size: 18px;
+					  margin-right: 7%;
 					}
-			#ES1 p{
-		  		margin: 7px 10px 7px 10px;
+				.DET ul.B li button#F{
+					font-size: 22px;
+					}
+				.DET ul.B li button#C{
+					font-size: 22px;
+					}
 				}
-			#ES1 iframe{
-  				margin: 7px 10px 7px 10px;
+	
+	@media screen and (max-width:900px ) {
+					#ES1{
+					margin-top: 75px;
+					}
+					#ART{
+					margin-top: 75px;
+					}
+					.AP{
+					width: 100%;
+					}
+					.AP h1{
+					  font-size: 20px;
+					}
+					#ES1 h1{
+					  font-size: 20px;
+					}
+					#ES1 p{
+					  font-size: 18px;
+					}
+					.DEF{
+					width: 100%;
+					float: auto;
+					}
+					.DET{
+					width: 100%;
+					float: auto;
+					}
+					#ES1 p{
+					  margin: 10px 20px 10px 20px;
+					}
+					#ES1 iframe{
+					  margin: 10px 20px 10px 20px;
+					}
+					.LOI{
+					display: none;
+					}
+					.LOG h4{
+					margin: 5%;
+					}
+					.LOG h3{
+					margin-left: 10%;
+					}
+					.LOG{
+					width: 100%;
+					}
+					.REG{
+					width: 100%;
+					}
+					.LOG h3{
+					margin-left: 15%;
+					}
+					.LOG input{
+					width: 75%;
+					}
+					.LOG button{
+					width: 75%;
+					}
+					.REG h3{
+					margin-left: 10%;
+					}
+					.REG input{
+					width: 75%;
+					}
+					.REG button{
+					width: 75%;
+					}
+					.LOG ul input[type="checkbox"]{
+					margin-right: 13%;
+					margin-top: 4%;
+					}
+					.AC{
+					width: 100%;
+					height: 75vh;
+					display: none;
+					}
+					#ART button.FI{
+					display: block;
+					}
+					.FI{
+					margin: 1%;
+					}
+					.FI2{
+					margin: 1%;
+					}
 				}
-			.FI .icon-fil{
-				font-size: 23px;
+	
+	@media screen and (max-width:768px ) {
+					.DET ul li{
+					float: auto;
+					margin-left: 0;
+					}
+					#ES1 p{
+					font-size: 16px;
+					}
+					.LOG h3{
+					margin-left: 12%;
+					}
+					.LOG input{
+					width: 80%;
+					}
+					.LOG button{
+					width: 80%;
+					}
+					.REG h3{
+					margin-left: 12%;
+					}
+					.REG input{
+					width: 80%;
+					}
+					.REG button{
+					width: 80%;
+					}
+					.LOG ul input[type="checkbox"]{
+					margin-right: 10%;
+					margin-top: 4%;
+					}
+					.DET ul.T{
+					width: 100%;
+					}
+					.DET ul.T li{
+					margin-left: 2%;
+					}
+					.DET ul.B li{
+					margin-left: 9%;
+					}
+	
+				}	
+	@media screen and (max-width:720px ) {
+					.LOG h3{
+					margin-left: 10%;
+					}
+					.LOG input{
+					width: 85%;
+					}
+					.LOG button{
+					width: 85%;
+					}
+					.REG h3{
+					margin-left: 10%;
+					}
+					.REG input{
+					width: 85%;
+					}
+					.REG button{
+					width: 85%;
+					}
+					.LOG ul input[type="checkbox"]{
+					margin-right: 8%;
+					margin-top: 4%;
+					}
 				}
-			.FI2 .icon-fil{
-				font-size: 23px;
+	
+	@media screen and (max-width:480px ) {
+				#ES1 h1{
+						  font-size: 20px;
+						}
+				#ART h1{
+						  font-size: 20px;
+						}
+				#ES1 p{
+					  margin: 7px 15px 7px 15px;
+					}
+				#ES1 iframe{
+					  margin: 7px 15px 7px 15px;
+					}
+				#ES1{
+					width: 100%;
+					padding-bottom: 5px;
+					}
+				#ART{
+					width: 100%;
+					padding-bottom: 5px;
+					}
+				.LOG h4{
+					font-size: 20px;
+					}
+				.LOG h3{
+					margin-left: 2%;
+					font-size: 16px;
+					}
+				.LOG input{
+					width: 100%;
+					margin-left: 0%;
+					}
+				.LOG button{
+					width: 95%;
+					}
+				.REG h3{
+					margin-left: 2%;
+					font-size: 16px;
+					}
+				.REG input{
+					width: 100%;
+					margin-left: 0%;
+					}
+				.REG button{
+					width: 100%;
+					}
+				.LOG ul input[type="checkbox"]{
+					margin-right: 4%;
+					margin-top: 5%;
+					}
+				.LOG ul a.S{
+					font-size: 14px;
+					}
+				.LOG ul li a{
+					font-size: 14px;
+					}
+				.REG ul li a{
+					font-size: 14px;
+					}
+				.FI{
+					margin: 2.2%;
+					}
+				.FI2{
+					margin: 2.2%;
+					}
+				.FI .icon-fil{
+					font-size: 25px;
+					color: #949da2;
+					}
+				.FI2 .icon-fil{
+					font-size: 25px;
+					color: #949da2;
+					}
+				.AC h1{
+					font-size: 18px;
+					}
+				.AC ul li a{
+					font-size: 16px;
+					}
+				.AC{
+					height: 80vh;
+					}		
 				}
-			.AC h1{
-				font-size: 17px;
+	
+	@media screen and (max-width:360px ) {
+				#ES1 h1{
+						  font-size: 16px;
+						}
+				#ES1 p{
+						  font-size: 13px;
+						}
+				#ART h1{
+						  font-size: 16px;
+						}
+				#ES1 p{
+					  margin: 7px 10px 7px 10px;
+					}
+				#ES1 iframe{
+					  margin: 7px 10px 7px 10px;
+					}
+				.FI .icon-fil{
+					font-size: 23px;
+					}
+				.FI2 .icon-fil{
+					font-size: 23px;
+					}
+				.AC h1{
+					font-size: 17px;
+					}
+				.AC ul li a{
+					font-size: 15px;
+					}
+				.AC{
+					height: 90vh;
+					}
+				.FI{
+					margin-left: 0.5%;
+					}
+				.FI2{
+					margin-left: 0.5%;
+					}
+				.DET ul li h2{
+					  font-size: 18px;
+					}
+				.DET ul li h3{
+					  font-size: 18px;
+					}
+				.DET ul.T li a{
+					font-size: 14px;
+					}
+				.DET ul.B li span{
+					  font-size: 16px;
+					  margin-right: 7%;
+					}
+				.DET ul.B li button#F{
+					font-size: 18px;
+					}
+				.DET ul.B li button#C{
+					font-size: 18px;
+					}
+				.DET ul.B li{
+					width: 50%;	
+					margin-left: 0%;
+					}
+				.DET ul.B li.S{
+					width: 50%;	
+					}
 				}
-			.AC ul li a{
-				font-size: 15px;
+	
+	@media screen and (max-width:320px ) {
+				.AC{
+					height: 100vh;
+					}
+				.DET ul li h2{
+					  font-size: 16px;
+					}
+				.DET ul li h3{
+					  font-size: 16px;
+					}
+				.DET ul.T li a{
+					font-size: 12px;
+					}
+				.DET ul.B li span{
+					  font-size: 14px;
+					  margin-right: 7%;
+					}
+				.DET ul.B li button#F{
+					font-size: 16px;
+					}
+				.DET ul.B li button#C{
+					font-size: 16px;
+					}	
 				}
-			.AC{
-				height: 90vh;
-				}
-			.FI{
-				margin-left: 0.5%;
-				}
-			.FI2{
-				margin-left: 0.5%;
-				}
-			.DET ul li h2{
-	  			font-size: 18px;
-				}
-			.DET ul li h3{
-	  			font-size: 18px;
-				}
-			.DET ul.T li a{
-				font-size: 14px;
-				}
-			.DET ul.B li span{
-	  			font-size: 16px;
-	  			margin-right: 7%;
-				}
-			.DET ul.B li button#F{
-		    	font-size: 18px;
-		    	}
-		    .DET ul.B li button#C{
-		    	font-size: 18px;
-		    	}
-		    .DET ul.B li{
-				width: 50%;	
-				margin-left: 0%;
-				}
-			.DET ul.B li.S{
-				width: 50%;	
-				}
-			}
-
-@media screen and (max-width:320px ) {
-			.AC{
-				height: 100vh;
-				}
-			.DET ul li h2{
-	  			font-size: 16px;
-				}
-			.DET ul li h3{
-	  			font-size: 16px;
-				}
-			.DET ul.T li a{
-				font-size: 12px;
-				}
-			.DET ul.B li span{
-	  			font-size: 14px;
-	  			margin-right: 7%;
-				}
-			.DET ul.B li button#F{
-		    	font-size: 16px;
-		    	}
-		    .DET ul.B li button#C{
-		    	font-size: 16px;
-		    	}	
-			}

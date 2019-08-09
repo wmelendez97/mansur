@@ -49,12 +49,15 @@
             <li class="CAM">
                 <a id="ca"><span class="icon-eti"></span>CATEGORÍAS<span class="icon-fle"></span></a>
                 <ul class="CAS">
-                    <li><a id="ac">Accesorios</a></li>
-                    <li><a id="sa">Camisas</a></li>
-                    <li><a id="se">Camisetas</a></li>
-                    <li><a id="pa">Pantalones</a></li>
-                    <li><a id="ve">Vestidos</a></li>
-                    <li><a id="za">Zapatos</a></li>
+                    <?php
+                    include "ELE/BD.php";
+                    $sql = "SELECT * FROM categoria";
+                    $result = mysqli_query($con,$sql);
+                    while($mostrar=mysqli_fetch_array($result)){ 
+                        $link = 'categoria.php?cat='.$mostrar['cat_id'];  
+                    ?>
+                    <li><a href="<?php echo $link;?>"><?php echo $mostrar['categoria']?></a></li>
+                    <?php } ?>
                 </ul>
             </li>
             <li><a href="ofertas.php"><span class="icon-ofe"></span>OFERTAS</a></li>

@@ -32,8 +32,8 @@
     <button type="submit" id="Log">Aplicar</button>
   </div>
   <div class="AP">
-     <h1>PRODUCTOS CON DESCUENTO</h1>
-     <?php include("ELE/ofe.php"); ?>
+     <h1>PRODUCTOS</h1>
+     <?php include("ELE/bus.php"); ?>
     </div>
   </div>
 </div>

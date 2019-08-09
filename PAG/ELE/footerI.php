@@ -17,5 +17,4 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="RECU/JS/Sty.js"></script>
 </body>
-
 </html>

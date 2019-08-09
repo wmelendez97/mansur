@@ -1,14 +1,12 @@
 <?php
- $server = 'localhost:3306';
- $username = 'root';
- $password = '';
- $database = 'sipm';
- 
-   $link = mysqli_connect($server, $username, $password, $database);
+$servername = "localhost";
+$username = "root";
+$password = "";
+$db = "sipm";
 
-   if ($link ) {
-      return "Conectado";
-   } else {
-      return "No conectado";
-   }
+$con = mysqli_connect($servername, $username, $password,$db);
+
+if (!$con) {
+    die("Connection failed: " . mysqli_connect_error());
+}
 ?>

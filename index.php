@@ -11,7 +11,32 @@
     </head>
 <body>
 <?php include("PAG/ELE/menuI.php"); ?>
-<?php include("PAG/ELE/slider.php"); ?>
-<?php include("PAG/ELE/nuevos.php"); ?>
-<?php include("PAG/ELE/mision.php"); ?>
+<div id="SL">
+        <ul>
+            <li class="P"><h5>MANSUR</h5><h6>Ropa y Accesorios</h6><img src="RECU/IMG/PNG/P1.jpg" alt=""></li>
+            <li class="F"><h5>MANSUR</h5><h6>Ropa y Accesorios</h6><button type="submit" id="Ella" href="PAG/genero.php?gen=1">Para Ella</button><img src="RECU/IMG/PNG/P2.jpg" alt=""></li>
+            <li class="M"><h5>MANSUR</h5><h6>Ropa y Accesorios</h6><button type="submit" id="El" href="PAG/genero.php?gen=2">Para El</button><img src="RECU/IMG/PNG/P3.jpg" alt=""></li>
+            <li class="O"><h5>DESCUENTOS</h5><h6>Productos Seleccionados</h6><button type="submit" id="Ofe" href="PAG/ofertas.php">Ver Ofertas</button><img src="RECU/IMG/PNG/P4.jpg" alt=""></li>
+        </ul>
+</div>
+<div id="ES">
+        <h1>NUEVOS PRODUCTOS</h1>
+        <?php include("PAG/ELE/nue.php"); ?>
+</div>
+<div id="ES">
+        <h1>ACERCA DE NOSOTROS</h1>
+        <div class="COT">
+            <h2>MISIÓN</h2>
+            <p>Ser una empresa vanguardista orientada en todo momento a la venta de productos de alta calidad, con el objetivo de ser una empresa exponente de la moda en el área de San Miguel. Nos identificamos con ser una tienda amiga que siempre apela
+                y esta al servicio de nuestros consumidores.</p>
+        </div>
+        <div class="CO">
+            <img src="RECU/IMG/PNG/L2.png"></img>
+        </div>
+        <div class="COT">
+            <h2>VISIÓN</h2>
+            <p>Diseñar y exponer productos novedosos proporcionando a nuestros clientes según sus expectativas, en uso de diversos estándares de alta calidad, variedad de estilos e innovación permanente, creando lujo contemporáneo plasmado en el arte de
+                la exclusividad de la moda con identidad; pudiendo ser unos exponentes a nivel nacional.</p>
+        </div>
+</div>
 <?php include("PAG/ELE/footerI.php"); ?>		
