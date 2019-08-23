@@ -10,7 +10,7 @@
         <link rel="shortcut icon" href="../RECU/CSS/FON/L2.ico">
     </head>
 <body>
-<?php include("ELE/menu.php"); ?>
+<?php include("../RECU/ELE/menuP.php"); ?>
 <div id="DE">
    <h1>DIRECCIÓN DE ENVIÓ</h1>
     <ul class="DIR">
@@ -80,4 +80,4 @@
         <button class="TAR"><span class="icon-tarjeta"></span>Pagar con Tarjeta</button>
     </div>
 </div>
-<?php include("ELE/footer.php"); ?>
+<?php include("../RECU/ELE/footerP.php"); ?>

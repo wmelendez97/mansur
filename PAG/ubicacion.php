@@ -10,7 +10,7 @@
         <link rel="shortcut icon" href="../RECU/CSS/FON/L2.ico">
     </head>
 <body>
-<?php include("ELE/menu.php"); ?>
+<?php include("../RECU/ELE/menuP.php"); ?>
 <div id="ES1">
    <h1>¿EN DONDE NOS PUEDES ENCONTRAR?</h1>
 
@@ -29,4 +29,4 @@
    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7759.56815322947!2d-88.19706867127546!3d13.487398688131572!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7b2a58d2095515%3A0xfb0914d1181e605f!2sUniversidad+Gerardo+Barrios!5e0!3m2!1ses!2ssv!4v1550565564120" width="93%" height="60%" frameborder="0" style="border:0" allowfullscreen></iframe>
     
 </div>
-<?php include("ELE/footer.php"); ?>
+<?php include("../RECU/ELE/footerP.php"); ?>

@@ -32,8 +32,6 @@ function main(){
 	});
 
 	$('.CHE').click(function(){
-		window.location='comprar.php';
+		window.location='com.html';
 	});
-
-
 };

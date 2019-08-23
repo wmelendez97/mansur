@@ -10,6 +10,6 @@
         <link rel="shortcut icon" href="../RECU/CSS/FON/L2.ico">
     </head>
 <body>
-<?php include("ELE/menu.php");?>
+<?php include("../RECU/ELE/menuP.php"); ?>
 <?php include("ELE/pro.php");?>
-<?php include("ELE/footer.php");?>
+<?php include("../RECU/ELE/footerP.php"); ?>

@@ -10,7 +10,7 @@
         <link rel="shortcut icon" href="../RECU/CSS/FON/L2.ico">
     </head>
 <body>
-<?php include("ELE/menu.php"); ?>
+<?php include("../RECU/ELE/menuP.php"); ?>
 <div id="ART">
   <button type="submit" class="FI" onclick="CAT()"><a href="#Filtros"><span class="icon-fil"></span></a></button>
   <button type="submit" class="FI2"><a href="#Filtros"><span class="icon-fil"></span></a></button>
@@ -37,4 +37,4 @@
     </div>
   </div>
 </div>
-<?php include("ELE/footer.php"); ?>
+<?php include("../RECU/ELE/footerP.php"); ?>

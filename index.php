@@ -10,7 +10,7 @@
         <link rel="shortcut icon" href="RECU/CSS/FON/L2.ico">
     </head>
 <body>
-<?php include("PAG/ELE/menuI.php"); ?>
+<?php include("RECU/ELE/menu.php"); ?>
 <?php 
 $g1 = 1;
 $link1 = 'genero.php?ge='.$g1;
@@ -28,7 +28,7 @@ $link2 = 'genero.php?ge='.$g2;
 </div>
 <div id="ES">
         <h1>NUEVOS PRODUCTOS</h1>
-        <?php include("PAG/ELE/nue.php"); ?>
+        <?php include("RECU/ELE/nue.php"); ?>
 </div>
 <div id="ES">
         <h1>ACERCA DE NOSOTROS</h1>
@@ -46,4 +46,4 @@ $link2 = 'genero.php?ge='.$g2;
                 la exclusividad de la moda con identidad; pudiendo ser unos exponentes a nivel nacional.</p>
         </div>
 </div>
-<?php include("PAG/ELE/footerI.php"); ?>		
+<?php include("RECU/ELE/footer.php"); ?>		

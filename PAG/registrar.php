@@ -11,7 +11,7 @@
     </head>
 <body>
 
-<?php include("ELE/menu.php"); ?>
+<?php include("../RECU/ELE/menuP.php"); ?>
 
 <div id="ES1">
   <div class="REG">
@@ -41,4 +41,4 @@
   </div>
 </div>
 
-<?php include("ELE/footer.php"); ?>
+<?php include("../RECU/ELE/footerP.php"); ?>

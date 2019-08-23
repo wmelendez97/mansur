@@ -1,5 +1,5 @@
 <?php
-      include "ELE/BD.php";
+      include "../RECU/ELE/BD.php";
       $id = $_GET['cat'];
       $sql = "SELECT * FROM articulo WHERE cat_id = '$id'";
       $result = mysqli_query($con,$sql);

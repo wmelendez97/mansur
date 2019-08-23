@@ -10,7 +10,7 @@
         <link rel="shortcut icon" href="../RECU/CSS/FON/L2.ico">
     </head>
 <body>
-<?php include("ELE/menu.php"); ?>
+<?php include("../RECU/ELE/menuP.php"); ?>
 <div id="ES1">
    <div class="LOG">
       <h4>INICIAR SESIÓN</h4>
@@ -29,4 +29,4 @@
     <img src="../RECU/IMG/PNG/L2.png">
   </div>
 </div>
-<?php include("ELE/footer.php"); ?>
+<?php include("../RECU/ELE/footerP.php"); ?>

@@ -10,7 +10,7 @@
         <link rel="shortcut icon" href="../RECU/CSS/FON/L2.ico">
     </head>
 <body>
-<?php include("ELE/menu.php"); ?>
+<?php include("../RECU/ELE/menuP.php"); ?>
 <div id="ESC">
    <h1>CARRITO</h1>
     <div class="ARC">
@@ -29,9 +29,7 @@
             </ul>
             <li class="C">
                 <div class="CAN">
-                  <button class="menos"><span class="icon-menos"></span></button>
-                  <input class="NUM" value="1"/>
-                  <button class="mas"><span class="icon-mas"></span></button>
+                  <input class="arc" name="cantidad" type="number" min="0">
                 </div>
             </li>
             <li class="S"><h3>$25.00</h3></li>
@@ -43,4 +41,4 @@
         <button class="CHE" href="PAG/comprar.php">Realizar Compra</button>
     </div>
 </div>
-<?php include("ELE/footer.php"); ?>
+<?php include("../RECU/ELE/footerP.php"); ?>

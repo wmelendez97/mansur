@@ -1,5 +1,5 @@
 <?php
-      include "ELE/BD.php";
+      include "../RECU/ELE/BD.php";
 
       $sql = "SELECT * FROM articulo WHERE descuento > 0 ";
       $result = mysqli_query($con,$sql);

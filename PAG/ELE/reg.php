@@ -1,6 +1,6 @@
 <?php
   
-  include "BD.php";
+  include "../RECU/ELE/BD.php";
 
   if (isset($_POST['nombre'])) {
 
@@ -13,6 +13,7 @@
 	$nom = "/^[a-zA-Z áéíóúüñÑÁÉÍÓÚÜ]+$/";
 	$correoValidation = "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9]+(\.[a-z]{2,4})$/";
 	$numero = "/^[0-9]+$/";
+	$rango = 0;
 
 if(empty($nombre) || empty($username) || empty($correo) || empty($contraseña) || empty($rcontraseña) ||
 	empty($telefono)){
@@ -89,31 +90,29 @@ if(empty($nombre) || empty($username) || empty($correo) || empty($contraseña) |
 	}
 	//existing email address in our database
 	
+	$sql = "SELECT username FROM usuario WHERE correo = '$correo' LIMIT 1" ;
 	$check_query = mysqli_query($con,$sql);
 	$count_email = mysqli_num_rows($check_query);
 	if($count_email > 0){
 		echo "
-    <div class='Alerta'>
-    <h1>Error</h1>
-    <p>El correo electrónico que ha digitado ya esta en uso, intente con uno distinto.</p>
-    </div>
+		<div class='Alerta'>
+		<h1>Error</h1>
+		<p>El correo que ha digitado ya esta en uso.</p>
+		</div>
 		";
 		exit();
 	} else {
 		$contraseña = md5($contraseña);
-		$sql = "INSERT INTO `usuario`(`correo`, `nombre`, `username`, `contraseña`, `telefono`) VALUES ('$correo', '$nombre', '$username', '$contraseña', '$telefono')";
-    mysqli_query($con,$sql);
-    if(mysqli_query($con,$sql)){
-			echo "
-      <div class='Alerta'>
-        <h1>Usuario Creado</h1>
-        <p>El usuario se ha creado correctamente, ahora procede a loguearte.</p>
-      </div>
-      ";
+		$sql = "INSERT INTO `usuario`(`correo`, `nombre`, `username`, `contraseña`, `telefono`, `rango`) VALUES ('$correo', '$nombre', '$username', '$contraseña' , '$telefono' , '$rango')";
+		$run_query = mysqli_query($con,$sql);
+		if(mysqli_query($con,$sql)){
+			echo "<div class='Alerta'>
+			<h1>Registro completado</h1>
+			<p>El usuario ha sido registrado.</p>
+			</div>";
 			exit();
 		}
-    
-	  }
-  }
+	}
+}
 }
 ?>
