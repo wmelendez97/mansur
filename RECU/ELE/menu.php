@@ -22,14 +22,14 @@
                         <li><a href="PAG/olvide.php">He olvidado mis datos</a></li>
                         </ul>
                         <ul class="USA">
-                            <li><a href="../USER/agregar.php"><span class="icon-subir"></span>Nuevo articulo</a></li>
-                            <li><a href="../USER/crear.php"><span class="icon-usernew"></span>Crear usuario</a></li>
-                            <li><a href="../USER/perfil.php"><span class="icon-config"></span>Perfil de usuario</a></li>
+                            <li><a href="USER/agregar.php"><span class="icon-subir"></span>Nuevo articulo</a></li>
+                            <li><a href="USER/crear.php"><span class="icon-usernew"></span>Crear usuario</a></li>
+                            <li><a href="USER/perfil.php"><span class="icon-config"></span>Perfil de usuario</a></li>
                             <li><a href="index.php"><span class="icon-salir"></span>Cerrar sesión</a></li>
                         </ul>
                         <ul class="USC">
-                            <li><a href="../USER/favoritos.php"><span class="icon-fav"></span>Favoritos</a></li>
-                            <li><a href="../USER/perfil.php"><span class="icon-config"></span>Editar perfil</a></li>
+                            <li><a href="USER/favoritos.php"><span class="icon-fav"></span>Favoritos</a></li>
+                            <li><a href="USER/perfil.php"><span class="icon-config"></span>Editar perfil</a></li>
                             <li><a href="index.php"><span class="icon-salir"></span>Cerrar sesión</a></li>
                         </ul>
                       </div>

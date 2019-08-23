@@ -600,6 +600,7 @@ footer{
 				#ES1 p{
   				margin: 20px 40px 20px 40px;
 				}
+			}
 				
 @media screen and (max-width:1350px ) {
 				.AR{
@@ -849,7 +850,6 @@ footer{
 					}
 				#HE ul li a{
 			  		font-size: 0px;
-					padding-left
 			  		}
 				#HE ul li span{
   					margin-right: 0px;

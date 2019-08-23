@@ -18,17 +18,17 @@
       <h4>REGISTRAR</h4>
       <form method="POST" action="">
       <h3>Nombre</h3>
-      <input type="text" name="nombre" id="nombre" placeholder="Nombre completo"/>
+      <input type="text" name="nombre"  placeholder="Nombre completo"/>
       <h3>Username</h3>
-      <input type="text" name="username" id="username" placeholder="Eje: minombre123"/>
+      <input type="text" name="username"  placeholder="Eje: minombre123"/>
       <h3>Correo</h3>
-      <input type="text" name="correo" id="correo"/>
+      <input type="email" name="correo"/>
       <h3>Contraseña</h3>
-      <input type="password" name="contraseña" id="correo"/>
+      <input type="password" name="contraseña" minlength="8"/>
       <h3>Confirmar contraseña</h3>
-      <input type="password" name="rcontraseña" id="correo"/>
+      <input type="password" name="rcontraseña" minlength="8"/>
       <h3>Numero de teléfono</h3>
-      <input type="text" name="telefono" id="correo"/>
+      <input type="tel" name="telefono" minlength="8"/>
       <ul>
         <li><button type="submit" name="registrar" id="Log">Registrar</button></li>
         <li><a href="login.php">Loguear</a></li>

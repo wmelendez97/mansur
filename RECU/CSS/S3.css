@@ -494,6 +494,7 @@ h4:hover{
 			.PC ul li a:hover{
 			text-decoration: underline;
 			}
+		}
 
 @media screen and (max-width:1366px ) {
 			#ESC{
@@ -642,7 +643,6 @@ h4:hover{
 			.RE ul li input.din{
 			width: 30%;
 			}
-			
 }
 @media screen and (max-width:768px ) {
 			.ARC ul.L{
@@ -905,7 +905,6 @@ h4:hover{
 			.RE ul li input.din{
 			width: 60%;
 			}
-
 }
 @media screen and (max-width:320px ) {
 			.ARC ul.A li.P{
@@ -951,4 +950,4 @@ h4:hover{
 			#DA button{
 			margin-left: 28%;
 			}
-}
+		}

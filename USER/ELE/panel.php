@@ -10,4 +10,4 @@
         <li><a href="agregar.php">Añadir articulo</a></li>
         <li><a href="crear.php">Añadir usuario</a></li>
       </ul>
-  </div>
+</div>
