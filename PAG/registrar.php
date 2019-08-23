@@ -41,4 +41,6 @@
   </div>
 </div>
 
+<?php if($msg != "") echo $msg . ""; ?>
+
 <?php include("../RECU/ELE/footerP.php"); ?>

@@ -15,7 +15,7 @@
 <div id="ES1">
    <h1>MANUAL DE USUARIO Y TÉRMINOS DE USO</h1>
     <ul class="ter">
-      <li><p class="uso">Los siguientes enlaces te redireccionaran a unos documentos en los cuales se contienen los términos de uso y manual de usuarios para el funcionamiento de esta pagina web. La mojar forma de estar al tanto de nuestras normas y politicas; es dando lectura a estos documentos:</p></li>
+      <li class="uso"><p>Los siguientes enlaces te redireccionaran a unos documentos en los cuales se contienen los términos de uso y manual de usuarios para el funcionamiento de esta pagina web. La mojar forma de estar al tanto de nuestras normas y politicas; es dando lectura a estos documentos:</p></li>
       <li class="p"><a href="../RECU/TÉRMINOS DE SERVICIO MANSUR 2019.pdf" target="_blank"><span class="icon-pdf"></span>Términos y politicas de uso</a></li>
       <li class="s"><a href="../RECU/TÉRMINOS DE SERVICIO MANSUR 2019.pdf" target="_blank"><span class="icon-pdf"></span>Manual de usuario</a></li>
     </ul>

@@ -367,7 +367,7 @@
   			margin-left: 5%;
   			color: #5e5e5e;
 			}
-			.DET ul li h3{
+			.DET ul.L li.pre h3{
 			color: #CD5360;
 			}
 			.DET ul.T{
@@ -464,7 +464,7 @@
 			#ES1 ul.ter li{
 			margin-top: 5%;
 			}
-			#ES1 ul.ter li p{
+			#ES1 ul.ter li.uso p{
 			color: black;
 		  	font-size: 20px;
   			font-family: 'Aller', 'Bahnschrift SemiBold', 'Arial';

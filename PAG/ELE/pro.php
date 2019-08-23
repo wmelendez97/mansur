@@ -2,6 +2,7 @@
     include "../RECU/ELE/BD.php";
     $id = $_GET['id'];
     $sql = "SELECT * FROM articulo WHERE art_id = '$id'";
+    $con->set_charset("utf8");
     
     $result = mysqli_query($con,$sql);
 
@@ -21,7 +22,7 @@
   </div>
   <div class="DET">
     <ul class="L"> 
-        <li><h2>Precio:</h2><h3 class="pre">$<?php echo $mostrar['precio']?></h3></li>
+        <li class="pre"><h2>Precio:</h2><h3>$<?php echo $mostrar['precio']?></h3></li>
         <ul class="T">
             <li class="H"><h2>Tallas:</h2></li>
             <li>

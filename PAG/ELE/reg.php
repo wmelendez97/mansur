@@ -2,6 +2,8 @@
   
   include "../RECU/ELE/BD.php";
 
+  $msg = "";
+
   if (isset($_POST['registrar'])) {
 
 	$nombre = $con->real_escape_string($_POST['nombre']);
@@ -16,20 +18,20 @@
 	$rango = 1;
 
 		if ($contraseña != $rcontraseña) {
-			echo "
-		<div class='Alerta'>
+			$msg = "
+			<div class='Alerta'>
 			<h1>Error</h1>
 			<p>Las contraseñas no coinciden.</p>
-				</div>
+			</div>
 			";
 		} else {
 			$hash = password_hash($contraseña, PASSWORD_BCRYPT);
 			$con->query("INSERT INTO usuario (nombre, username, correo, contraseña, telefono) VALUES ('$nombre', '$username', '$correo', '$hash', '$telefono', '$rango')");
-			echo "
+			$msg = "
 			<div class='Alerta'>
 			<h1>Registro Completado</h1>
 			<p>Se ha registrado satisfactoreamente.</p>
-				</div>
+			</div>
 			";
 		}
 	}
