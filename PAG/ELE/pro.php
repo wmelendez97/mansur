@@ -2,7 +2,6 @@
     include "../RECU/ELE/BD.php";
     $id = $_GET['id'];
     $sql = "SELECT * FROM articulo WHERE art_id = '$id'";
-    $con->set_charset("utf8");
     
     $result = mysqli_query($con,$sql);
 

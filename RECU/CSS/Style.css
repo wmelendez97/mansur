@@ -179,7 +179,6 @@ select:focus{
 		right: 16.7%;
 		}
 		#HE ul li .USA{
-		display:none;
 		border-top: 4px solid rgba(59,113,166);
 		background-color: #D0DCE9;
 		width: 10%;
@@ -200,7 +199,6 @@ select:focus{
 		font-size: 17px;
 		}
 		#HE ul li .USC{
-		display:none;
 		border-top: 4px solid rgba(59,113,166);
 		background-color: #D0DCE9;
 		width: 10%;

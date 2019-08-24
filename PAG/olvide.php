@@ -19,7 +19,7 @@
       <input type="text" id="correo"/>
       <ul>
         <li><button type="submit" id="Log">Enviar</button></li>
-        <li><a href="login.php">Loguear</a></li>
+        <li><a href="../login.php">Loguear</a></li>
       </ul>
   </div>
   <div class="LOI">

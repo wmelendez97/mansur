@@ -10,7 +10,7 @@
                 </ul>
             </li>
             <li>
-              <a href="../PAG/login.php"><span class="icon-user"></span>Usuario</a>
+              <a href="../login.php"><span class="icon-user"></span>Usuario</a>
                 <ul class="USL">
                       <div id="US">
                         <input type="text" id="correo" placeholder="Correo Electronico"/>
