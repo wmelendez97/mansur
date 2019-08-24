@@ -10,7 +10,14 @@
         <link rel="shortcut icon" href="../RECU/CSS/FON/L2.ico">
     </head>
 <body>
-<?php include("../RECU/ELE/menuP.php"); ?>
+<?php
+session_start();
+if(isset($uid)){
+	include("ELE/menuL.php");
+}else{
+	include("ELE/menu.php");
+}
+?>
 <div id="ESC">
    <h1>CARRITO</h1>
     <div class="ARC">

@@ -10,9 +10,14 @@
         <link rel="shortcut icon" href="../RECU/CSS/FON/L2.ico">
     </head>
 <body>
-
-<?php include("../RECU/ELE/menuP.php"); ?>
-
+<?php
+session_start();
+if(isset($uid)){
+	include("ELE/menuL.php");
+}else{
+	include("ELE/menu.php");
+}
+?>
 <div id="ES1">
   <div class="REG">
       <h4>REGISTRAR</h4>
@@ -31,7 +36,7 @@
       <input type="tel" name="telefono" minlength="8"/>
       <ul>
         <li><button type="submit" name="registrar" id="Log">Registrar</button></li>
-        <li><a href="../login.php">Loguear</a></li>
+        <li><a href="login.php">Loguear</a></li>
       </ul>
       <?php include("ELE/reg.php"); ?>
       </form>

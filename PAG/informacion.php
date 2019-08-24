@@ -10,8 +10,14 @@
         <link rel="shortcut icon" href="../RECU/CSS/FON/L2.ico">
     </head>
 <body>
-<?php include("../RECU/ELE/menuP.php"); ?>
-
+<?php
+session_start();
+if(isset($uid)){
+	include("ELE/menuL.php");
+}else{
+	include("ELE/menu.php");
+}
+?>
 <div id="ES1">
    <h1>MANUAL DE USUARIO Y TÉRMINOS DE USO</h1>
     <ul class="ter">

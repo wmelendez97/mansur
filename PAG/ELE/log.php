@@ -1,6 +1,6 @@
 <?php
   
-  include "BD.php";
+  include "../RECU/ELE/BD.php";
   session_start();
 
   	$msg = "";
@@ -16,9 +16,10 @@
 	if ($sql->num_rows > 0) {
 		$data = $sql->fetch_array();
 		if (password_verify($contraseña, $data['pass'])) {
+			$_SESSION['user_id'] = $uid;
 			$_SESSION['username'] = $usuario;
 			$_SESSION['rango'] = $rango;
-			header("location: index.php");
+			header("location: ../index.php");
 		} else {
 			$msg = "<div class='Alerta'><h1>Error</h1><p>Algo anda mal con los datos que estas usando.</p></div>";
 		}

@@ -10,28 +10,20 @@
                 </ul>
             </li>
             <li>
-              <a href="../login.php"><span class="icon-user"></span>Usuario</a>
+              <a href="../PAG/login.php"><span class="icon-user"></span>Usuario</a>
                 <ul class="USL">
                       <div id="US">
-                        <input type="text" id="correo" placeholder="Correo Electronico"/>
-                        <input type="password" id="contraseña" placeholder="Contraseña"/>
+                      <form method="POST" action="">
+                        <input type="email" nombre="correo" placeholder="Correo Electronico"/>
+                        <input type="password" nombre="contraseña" placeholder="Contraseña"/>
                         <input type="checkbox" name="CH" value="CH"><a class="S">Recordar</a>
                         <ul>
-                        <li><button type="submit" id="Log">Entrar</button></li>
+                        <li><button type="submit" nombre="login">Entrar</button></li>
                         <li><a href="../PAG/registrar.php">Registrar</a></li>
                         <li><a href="../PAG/olvide.php">He olvidado mis datos</a></li>
                         </ul>
-                        <ul class="USA">
-                            <li><a href="agregar.php"><span class="icon-subir"></span>Nuevo articulo</a></li>
-                            <li><a href="crear.php"><span class="icon-usernew"></span>Crear usuario</a></li>
-                            <li><a href="perfil.php"><span class="icon-config"></span>Perfil de usuario</a></li>
-                            <li><a href="../index.php"><span class="icon-salir"></span>Cerrar sesión</a></li>
-                        </ul>
-                        <ul class="USC">
-                            <li><a href="favoritos.php"><span class="icon-fav"></span>Favoritos</a></li>
-                            <li><a href="perfil.php"><span class="icon-config"></span>Editar perfil</a></li>
-                            <li><a href="../index.php"><span class="icon-salir"></span>Cerrar sesión</a></li>
-                        </ul>
+                        <?php include("MEN/log.php"); ?>
+                        </form>
                       </div>
                 </ul>
             </li>
@@ -46,8 +38,12 @@
         <ul>
             <li class="BU">
                 <div class="BA">
-                  <button class="IC"><span class="icon-bus"></span></button>
-                  <input type="search" id="BUS" placeholder="Buscar..." />
+                    
+                <form method="POST" action=""> 
+                  <button class="IC" name="buscar" value="buscar"><span class="icon-bus"></span></button>
+                  <input type="search" id="BUS" name="busqueda" placeholder="Buscar..." />
+                </form>
+                
                 </div>
             </li>
             <li><a href="../index.php"><span class="icon-ini"></span>INICIO</a></li>
@@ -55,13 +51,13 @@
                 <a id="ca"><span class="icon-eti"></span>CATEGORÍAS<span class="icon-fle"></span></a>
                 <ul class="CAS">
                     <?php
-                    include "BD.php";
+                    include "../RECU/ELE/BD.php";
                     $sql = "SELECT * FROM categoria";
                     $result = mysqli_query($con,$sql);
                     while($mostrar=mysqli_fetch_array($result)){ 
-                        $link = '../PAG/categoria.php?cat='.$mostrar['cat_id'];  
+                        $link = 'categoria.php?cat='.$mostrar['cat_id'];  
                     ?>
-                    <li><a href="<?php echo $link;?>"><?php echo $mostrar['categoria']?></a></li>
+                    <li><a href="../PAG/<?php echo $link;?>"><?php echo $mostrar['categoria']?></a></li>
                     <?php } ?>
                 </ul>
             </li>

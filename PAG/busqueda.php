@@ -10,7 +10,14 @@
         <link rel="shortcut icon" href="../RECU/CSS/FON/L2.ico">
     </head>
 <body>
-<?php include("../RECU/ELE/menuP.php"); ?>
+<?php
+session_start();
+if(isset($uid)){
+	include("ELE/menuL.php");
+}else{
+	include("ELE/menu.php");
+}
+?>
 <div id="ART">
   <button type="submit" class="FI" onclick="CAT()"><a href="#Filtros"><span class="icon-fil"></span></a></button>
   <button type="submit" class="FI2"><a href="#Filtros"><span class="icon-fil"></span></a></button>

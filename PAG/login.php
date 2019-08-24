@@ -1,17 +1,24 @@
-<?php include("RECU/ELE/log.php"); ?>
+<?php include("ELE/log.php"); ?>
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <title>Mansur: Login</title>
-        <link rel='stylesheet' type='text/css' href='RECU/CSS/Style.css' media="all">
-        <link rel='stylesheet' type='text/css' href='RECU/CSS/Fonts.css' media="all">
-        <link rel='stylesheet' type='text/css' href='RECU/CSS/S2.css' media="all">
-        <link rel="shortcut icon" href="RECU/CSS/FON/L2.ico">
+        <link rel='stylesheet' type='text/css' href='../RECU/CSS/Style.css' media="all">
+        <link rel='stylesheet' type='text/css' href='../RECU/CSS/Fonts.css' media="all">
+        <link rel='stylesheet' type='text/css' href='../RECU/CSS/S2.css' media="all">
+        <link rel="shortcut icon" href="../RECU/CSS/FON/L2.ico">
     </head>
 <body>
-<?php include("RECU/ELE/menu.php"); ?>
+<?php
+session_start();
+if(isset($uid)){
+	include("ELE/menuL.php");
+}else{
+	include("ELE/menu.php");
+}
+?>
 <div id="ES1">
    <div class="LOG">
       <h4>INICIAR SESIÓN</h4>
@@ -26,11 +33,14 @@
         <li><a href="PAG/olvide.php">He olvidado mis datos</a></li>
         <li><a href="PAG/registrar.php">Registrar</a></li>
       </ul>
-      
+      <?php include("ELE/log.php"); ?>
       </form>
   </div>
   <div class="LOI">
-    <img src="RECU/IMG/PNG/L2.png">
+    <img src="../RECU/IMG/PNG/L2.png">
   </div>
 </div>
-<?php include("RECU/ELE/footer.php"); ?>
+
+<?php if($msg != "") echo $msg . ""; ?>
+
+<?php include("../RECU/ELE/footerP.php"); ?>

@@ -10,7 +10,14 @@
         <link rel="shortcut icon" href="../RECU/CSS/FON/L2.ico">
     </head>
 <body>
-<?php include("../RECU/ELE/menuP.php"); ?>
+<?php
+session_start();
+if(isset($uid)){
+	include("ELE/menuL.php");
+}else{
+	include("ELE/menu.php");
+}
+?>
 <div id="ES1">
    <div class="LOG">
       <h4>¿Has olvidado tus datos?</h4>
@@ -19,7 +26,7 @@
       <input type="text" id="correo"/>
       <ul>
         <li><button type="submit" id="Log">Enviar</button></li>
-        <li><a href="../login.php">Loguear</a></li>
+        <li><a href="login.php">Loguear</a></li>
       </ul>
   </div>
   <div class="LOI">
