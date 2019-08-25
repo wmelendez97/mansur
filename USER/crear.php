@@ -23,6 +23,7 @@ if(isset($uid)){
   <div class="RE">
      <h1>AÑADIR USUARIO</h1>
      <ul class="ed">
+        <form method="POST" action="">
           <li><h3>Nombre:</h3>
           <input name="nombre" type="text"></li>
           <li><h3>Username:</h3>
@@ -32,15 +33,17 @@ if(isset($uid)){
           <li><h3>Contraseña:</h3>
           <input name="contraseña" type="password"></li>
           <li><h3>Confirmar contraseña:</h3>
-          <input name="recontraseña" type="password"></li>
+          <input name="rcontraseña" type="password"></li>
           <li><h3>Numero de teléfono:</h3>
           <input name="telefono" type="tel"></li>
           <li><h3>Tipo de usuario:</h3>
           <select name="rango">
                   <option value="0">Usuario Final</option>
-                  <option value="2">Usuario Administrador</option>
+                  <option value="1">Usuario Administrador</option>
           </select>
-          <li><button class="añ-di">Crear Usuario</button></li>
+          <li><button name="crear">Crear Usuario</button></li>
+          <?php include("ELE/reg.php"); ?>
+          </form>
       </ul>
   </div>
 </div>
