@@ -20,7 +20,7 @@
     $carpeta = $_SERVER['DOCUMENT_ROOT'] . '/MANSUR/RECU/IMG/';
     move_uploaded_file($_FILES['imagen']['tmp_name'],$carpeta.$imagen);
     
-    $con->query("UPDATE  articulo  SET  fecha ='$fecha', nombre ='$nombre', marca ='$marca', precio ='$precio', descuento ='$descuento', descripcion ='$descripcion', img ='$imagen', cat_id ='$categoria', ge_id ='$genero', estado ='$estado', cantidad ='$cantidad' WHERE art_id='$id'");
-    echo "<p>Actualizacion completa</p>";
+    $con->query("INSERT INTO articulo (fecha, nombre, marca, precio, descuento, descripcion, img, cat_id, ge_id, estado, cantidad) VALUES ('$fecha','$nombre', '$marca', '$precio', '$descuento', '$descripcion', '$imagen', '$categoria', '$genero', '$estado', '$cantidad')");
+    echo "<p>Nuevo articulo subido con exito</p>";
     }
 ?>

@@ -73,7 +73,7 @@ if(isset($uid)){
           </select></li>
           <li><h3>Imagen del articulo:</h3>
           <input type="file" name="imagen"></li>
-          <li><button class="añ-di" name="subir">Subir Articulo</button></li>
+          <li><button class="añ-di" name="subir">Actualizar Articulo</button></li>
           <?php include("ELE/edit.php"); ?>
           </form>
       </ul>

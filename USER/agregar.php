@@ -23,6 +23,7 @@ if(isset($uid)){
   <div class="RE">
      <h1>AÑADIR ARTICULO</h1>
      <ul class="na">
+        <form method="POST" action="" enctype="multipart/form-data">
           <li><h3>Nombre del articulo:</h3>
           <input name="nombre"></li>
           <li><h3>Marca del articulo:</h3>
@@ -39,11 +40,21 @@ if(isset($uid)){
           <textarea name="descripcion"></textarea></li>
           <li><h3>Categoria:</h3>
             <select name="categoria">
-                  <option value="1">Accesorios</option>
+              <?php 
+              $sql1 = "SELECT * FROM categoria";
+              $categoria = mysqli_query($con,$sql1);
+              while($cat=mysqli_fetch_assoc($categoria)){?>
+                <option value="<?php echo $cat['cat_id']?>"><?php echo $cat['categoria']?></option>
+              <?php } ?>
           </select></li>
           <li><h3>Genero:</h3>
             <select name="genero">
-                  <option value="1">Femenino</option>
+              <?php 
+              $sql2 = "SELECT * FROM genero";
+              $genero = mysqli_query($con,$sql2);
+              while($gen=mysqli_fetch_assoc($genero)){?>
+                <option value="<?php echo $gen['ge_id']?>"><?php echo $gen['genero']?></option>
+              <?php } ?>
           </select></li>
           <li><h3>Estado del articulo:</h3>
             <select name="estado">
@@ -52,7 +63,9 @@ if(isset($uid)){
           </select></li>
           <li><h3>Imagen del articulo:</h3>
           <input class="arch" name="imagen" type="file"></li>
-          <li><button class="añ-di">Subir Articulo</button></li>
+          <li><button name="subir">Subir Articulo</button></li>
+          <?php include("ELE/nart.php"); ?>
+          </form>
       </ul>
   </div>
 </div>
