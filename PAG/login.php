@@ -30,8 +30,8 @@ if(isset($uid)){
       <ul>
         <input type="checkbox" name="CH" value="CH"><a class="S">Recordar</a>
         <li><button type="submit" name="login">Entrar</button></li>
-        <li><a href="PAG/olvide.php">He olvidado mis datos</a></li>
-        <li><a href="PAG/registrar.php">Registrar</a></li>
+        <li><a href="olvide.php">He olvidado mis datos</a></li>
+        <li><a href="registrar.php">Registrar</a></li>
       </ul>
       <?php include("ELE/log.php"); ?>
       </form>
