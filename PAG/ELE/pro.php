@@ -7,6 +7,7 @@
 
       while($mostrar=mysqli_fetch_assoc($result)){
         $editar = 'editar.php?id='.$mostrar['art_id'];  
+        $eliminar = '/ELE/del.php?id='.$mostrar['art_id'];
         $cat_id = $mostrar['cat_id'];  
         $ge_id =$mostrar['ge_id'];       
         ?>
@@ -16,7 +17,7 @@
   <div class="ADM">
     <ul>
         <li><a href="../USER/<?php echo $editar;?>"><span class="icon-edit"></span>Editar</a></li>
-        <li><a href="../index.html"><span class="icon-eliminar"></span>ELiminar</a></li>
+        <li><a href="<?php echo $eliminar?>"><span class="icon-eliminar"></span>ELiminar</a></li>
     </ul>
   </div>
   <div class="DEF">

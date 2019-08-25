@@ -71,9 +71,10 @@ if(isset($uid)){
                   <option value="1">Activo</option>
                   <option value="0">Inactivo</option>
           </select></li>
-          <li><a href="editarimg.php?id=<?php echo $id?>">Editar imagen</a></li>
+          <li><h3>Imagen del articulo:</h3>
+          <input type="file" name="imagen" ></li>
           <li><button class="añ-di" name="subir">Actualizar Articulo</button></li>
-          <?php include("ELE/edit.php"); ?>
+          <?php include("ELE/editimg.php"); ?>
           </form>
       </ul>
   </div>
