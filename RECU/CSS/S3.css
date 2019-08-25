@@ -467,6 +467,15 @@ h4:hover{
 			margin-top: 2%;
 			width: 50%;
 			}
+			.RE ul.na li a{
+			color: #82A4C6;
+			font-size: 14px;
+			font-family:'Open Sans', 'Bahnschrift', 'Arial';
+			font-style: bold;
+			}
+			.RE ul.na li a:hover{
+			text-decoration: underline;
+			}
 			.PC h2{
 			color: black;
 			background-color: #D0DCE9;
