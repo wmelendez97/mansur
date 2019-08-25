@@ -5,14 +5,17 @@
     
     $result = mysqli_query($con,$sql);
 
-      while($mostrar=mysqli_fetch_assoc($result)){         
+      while($mostrar=mysqli_fetch_assoc($result)){
+        $editar = 'editar.php?id='.$mostrar['art_id'];  
+        $cat_id = $mostrar['cat_id'];  
+        $ge_id =$mostrar['ge_id'];       
         ?>
     
   <div id="ES1">
   <h1><?php echo $mostrar['nombre']?></h1>
   <div class="ADM">
     <ul>
-        <li><a href="../PRAD/ed.html"><span class="icon-edit"></span>Editar</a></li>
+        <li><a href="../USER/<?php echo $editar;?>"><span class="icon-edit"></span>Editar</a></li>
         <li><a href="../index.html"><span class="icon-eliminar"></span>ELiminar</a></li>
     </ul>
   </div>
@@ -31,6 +34,20 @@
             </li>
         </ul>
         <li><h2>Marca:</h2><h3><?php echo $mostrar['marca']?></h3></li>
+        <?php 
+        $sql2 = "SELECT * FROM genero WHERE ge_id = '$ge_id'";
+        $genero = mysqli_query($con,$sql2);
+        while($gen=mysqli_fetch_assoc($genero)){?>
+          <li>.</li>
+          <li><h2>Genero:</h2><h3><?php echo $gen['genero']?></h3></li>
+        <?php } ?>
+        <?php 
+        $sql1 = "SELECT * FROM categoria WHERE cat_id = '$cat_id'";
+        $categoria = mysqli_query($con,$sql1);
+        while($cat=mysqli_fetch_assoc($categoria)){?>
+          <li>.</li>
+          <li><h2>Categoria:</h2><h3><?php echo $cat['categoria']?></h3></li>
+        <?php } ?>
         <ul></ul>
         <ul class="B">
             <li><button type="submit" id="F"><span class="icon-fav"></span>FAVORITOS</button></li>

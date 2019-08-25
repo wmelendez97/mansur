@@ -3,7 +3,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <title>Mansur: Perfil de usuario</title>
+        <title>Mansur: Editar articulo</title>
         <link rel='stylesheet' type='text/css' href='../RECU/CSS/Style.css' media="all">
         <link rel='stylesheet' type='text/css' href='../RECU/CSS/Fonts.css' media="all">
         <link rel='stylesheet' type='text/css' href='../RECU/CSS/S3.css' media="all">
@@ -20,30 +20,51 @@ if(isset($uid)){
 ?>
 <div id="ES1">
 <?php include("ELE/panel.php"); ?>
-  <div class="RE">
+<?php
+    include "../RECU/ELE/BD.php";
+    $id = $_GET['id'];
+    $sql = "SELECT * FROM articulo WHERE art_id = '$id'";
+    
+    $result = mysqli_query($con,$sql);
+
+    while($mostrar=mysqli_fetch_assoc($result)){         
+        ?>
+    
+<div class="RE">
      <h1>AÑADIR ARTICULO</h1>
      <ul class="na">
+        <form method="POST" action="" enctype="multipart/form-data">
           <li><h3>Nombre del articulo:</h3>
-          <input name="nombre"></li>
+          <input name="nombre" value="<?php echo $mostrar['nombre']?>"></li>
           <li><h3>Marca del articulo:</h3>
-          <input name="marca"></li>
+          <input name="marca" value="<?php echo $mostrar['marca']?>"></li>
           <li><h3>Agregar fecha actual:</h3>
-          <input class="din" name="fecha" type="date"></li>
+          <input class="din" name="fecha" type="date"value="<?php echo $mostrar['fecha']?>"></li>
           <li><h3>Precio del articulo:</h3>
-          <input class="din" name="precio" type="number" step="any" min="0"></li>
+          <input class="din" name="precio" type="number" step="any" min="0" value="<?php echo $mostrar['precio']?>"></li>
           <li><h3>Descuento a aplicar:</h3>
-          <input class="din" name="descuento" type="number" step="int" min="0"></li>
+          <input class="din" name="descuento" type="number" step="int" min="0" value="<?php echo $mostrar['descuento']?>"></li>
           <li><h3>Cantidad de articulos:</h3>
-          <input class="din" name="cantidad" type="number" min="0"></li>
+          <input class="din" name="cantidad" type="number" min="0" value="<?php echo $mostrar['cantidad']?>"></li>
           <li><h3>Descripción del articulo:</h3>
-          <textarea name="descripcion"></textarea></li>
+          <textarea name="descripcion"><?php echo $mostrar['descripcion']?></textarea></li>
           <li><h3>Categoria:</h3>
             <select name="categoria">
-                  <option value="1">Accesorios</option>
+              <?php 
+              $sql1 = "SELECT * FROM categoria";
+              $categoria = mysqli_query($con,$sql1);
+              while($cat=mysqli_fetch_assoc($categoria)){?>
+                <option value="<?php echo $cat['cat_id']?>"><?php echo $cat['categoria']?></option>
+              <?php } ?>
           </select></li>
           <li><h3>Genero:</h3>
             <select name="genero">
-                  <option value="1">Femenino</option>
+              <?php 
+              $sql2 = "SELECT * FROM genero";
+              $genero = mysqli_query($con,$sql2);
+              while($gen=mysqli_fetch_assoc($genero)){?>
+                <option value="<?php echo $gen['ge_id']?>"><?php echo $gen['genero']?></option>
+              <?php } ?>
           </select></li>
           <li><h3>Estado del articulo:</h3>
             <select name="estado">
@@ -51,10 +72,13 @@ if(isset($uid)){
                   <option value="0">Inactivo</option>
           </select></li>
           <li><h3>Imagen del articulo:</h3>
-          <input class="arch" name="imagen" type="file"></li>
-          <li><button class="añ-di">Subir Articulo</button></li>
+          <input type="file" name="imagen"></li>
+          <li><button class="añ-di" name="subir">Subir Articulo</button></li>
+          <?php include("ELE/edit.php"); ?>
+          </form>
       </ul>
   </div>
+<?php } ?>
 </div>
 
 <?php include("../RECU/ELE/footerU.php"); ?>
