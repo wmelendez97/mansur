@@ -6,19 +6,14 @@
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <title>Mansur: Login</title>
         <link rel='stylesheet' type='text/css' href='../RECU/CSS/Style.css' media="all">
-        <link rel='stylesheet' type='text/css' href='../RECU/CSS/Fonts.css' media="all">
         <link rel='stylesheet' type='text/css' href='../RECU/CSS/S2.css' media="all">
+        <link rel='stylesheet' type='text/css' href='../RECU/CSS/Fonts.css' media="all">
         <link rel="shortcut icon" href="../RECU/CSS/FON/L2.ico">
     </head>
 <body>
-<?php
-session_start();
-if(isset($uid)){
-	include("ELE/menuL.php");
-}else{
-	include("ELE/menu.php");
-}
-?>
+
+<?php include("ELE/menuL.php"); ?>
+
 <div id="ES1">
    <div class="LOG">
       <h4>INICIAR SESIÓN</h4>

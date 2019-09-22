@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <title>Mansur: Ofertas</title>
         <link rel='stylesheet' type='text/css' href='../RECU/CSS/Style.css' media="all">
-        <link rel='stylesheet' type='text/css' href='../RECU/CSS/Fonts.css' media="all">
         <link rel='stylesheet' type='text/css' href='../RECU/CSS/S2.css' media="all">
+        <link rel='stylesheet' type='text/css' href='../RECU/CSS/Fonts.css' media="all">
         <link rel="shortcut icon" href="../RECU/CSS/FON/L2.ico">
     </head>
 <body>
@@ -40,7 +40,12 @@ if(isset($uid)){
   </div>
   <div class="AP">
      <h1>PRODUCTOS CON DESCUENTO</h1>
-     <?php include("ELE/ofe.php"); ?>
+     <?php 
+      include "../RECU/ELE/BD.php";
+      $sql = "SELECT * FROM articulo WHERE descuento > 0 AND estado = 1";
+      $result = mysqli_query($con,$sql);
+      include("ELE/art.php");
+     ?>
     </div>
   </div>
 </div>

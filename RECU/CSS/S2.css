@@ -7,29 +7,6 @@
   	margin: 10px 60px 10px 60px;
 	}
 
-.Alerta{
-	width: 25%;
-	background-color: #ffffff;
-	z-index:98;
-	margin: auto;
-	padding-bottom: 5px;
-	}
-	.Alerta h1{
-	color: black;
-  	font-size: 16px;
- 	font-family:'Gisha', 'DengXian',  'Helvatica';
-  	font-weight: bold;
-  	text-align: center;
-  	margin: 20px;
-	}
-	.Alerta p{
-	color: black;
-	text-align: center;
-  	margin: 20px 80px 20px 80px;
-  	font-size: 12px;
-  	font-family:'Aller', 'Bahnschrift SemiBold', 'Arial';
-	}
-
 .LOG{
 	width: 50%;
 	position:relative;
@@ -351,6 +328,7 @@
 			.DET ul li{
   			margin-left: 10%;
   			margin-top:3%;
+  			width: 100%;
 			}
 			.DET ul li h2{
   			float: left;
@@ -370,6 +348,21 @@
 			.DET ul.L li.pre h3{
 			color: #CD5360;
 			}
+			.DET ul li.ant h2{
+			float: left;
+			color: #5e5e5e;
+			font-size: 16px;
+			font-family: 'Bahnschrift SemiBold', 'Arial';
+			text-align: left;
+			}
+			.DET ul li.ant h3{
+			float: left;
+			font-size: 16px;
+			font-family:'Bahnschrift SemiBold', 'Arial';
+			text-align: left;
+			margin-left: 9%;
+			color: #8d8d8d;
+			}
 			.DET ul.T{
 			margin: 0px auto;
 			}
@@ -379,6 +372,7 @@
 			.DET ul.T li{
 			float: left;
 			margin-left: 2%;
+			width: 14%;
 			}
 			.DET ul.T li a{
 			margin-right: 1%;
@@ -455,6 +449,20 @@
 	    	.DET ul li button#C:hover{
 			background-color: #96d5f1;
 	    	}
+	    	.DET ul.B li button#I{
+			font-family:'Aller', 'Bahnschrift SemiBold', 'Arial';
+			color: white;
+	    	font-size: 25px;
+	    	padding: 15px;
+			background: #c1ccd2;
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+			width: 100%;
+			border: none;
+	    	}
+	    	.DET ul li button#I:hover{
+			cursor: default;
+	    	}
 			#ES1 ul.ter{
 			width: 80%;
 			margin: auto;
@@ -493,9 +501,6 @@
 @media screen and (max-width:1366px ) {
 				#ES1 iframe{
   				margin: 10px 40px 10px 40px;
-				}
-				.Alerta{
-				width: 35%;
 				}
 				.AC{
 				width: 16%;
@@ -599,18 +604,15 @@
 		    .DET ul.B li button#C{
 		    	font-size: 22px;
 		    	}
+		    .DET ul.B li button#I{
+		    	font-size: 22px;
+		    	}
 		    ul.ter{
 				width: 100%;
-				}
-			.Alerta{
-				width: 45%;
 				}
 			}
 
 @media screen and (max-width:900px ) {
-				.Alerta{
-				width: 55%;
-				}
 				#ART{
 				margin-top: 75px;
 				}
@@ -758,9 +760,6 @@
 				.LOG h3{
 				margin-left: 10%;
 				}
-				.Alerta{
-				width: 65%;
-				}
 				.LOG input{
 				width: 85%;
 				}
@@ -783,10 +782,6 @@
 			}
 
 @media screen and (max-width:480px ) {
-			
-			.Alerta{
-			width: 80%;
-			}
 			#ART h1{
 				  	font-size: 20px;
 					}
@@ -906,6 +901,13 @@
 			.DET ul li h3{
 	  			font-size: 18px;
 				}
+			.DET ul li.ant h2{
+				font-size: 14px;
+				}
+			.DET ul li.ant h3{
+				font-size: 14px;
+				margin-left: 7.5%;
+				}
 			.DET ul.T li a{
 				font-size: 14px;
 				}
@@ -917,6 +919,9 @@
 		    	font-size: 18px;
 		    	}
 		    .DET ul.B li button#C{
+		    	font-size: 18px;
+		    	}
+		    .DET ul.B li button#I{
 		    	font-size: 18px;
 		    	}
 		    .DET ul.B li{
@@ -955,6 +960,9 @@
 		    	font-size: 16px;
 		    	}
 		    .DET ul.B li button#C{
+		    	font-size: 16px;
+		    	}
+		    .DET ul.B li button#I{
 		    	font-size: 16px;
 		    	}
 		    #ES1 ul.ter li.p a{

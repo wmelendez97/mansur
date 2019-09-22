@@ -2,37 +2,20 @@
 <a href="#Menu"><span class="icon-menu"></span></a>
 </div>
 
-    <div id="HE">
-        <ul>
-            <li>
-                <a href="carrito.php"><span class="icon-cart"></span>Carrito</a>
-                <ul class="CAR">
-                </ul>
-            </li>
-            <li>
-              <a href="login.php"><span class="icon-user"></span>Usuario</a>
-                <ul class="USL">
-                      <div id="US">
-                      <form method="POST" action="">
-                        <input type="email" nombre="correo" placeholder="Correo Electronico"/>
-                        <input type="password" nombre="contraseña" placeholder="Contraseña"/>
-                        <input type="checkbox" name="CH" value="CH"><a class="S">Recordar</a>
-                        <ul>
-                        <li><button type="submit" nombre="login">Entrar</button></li>
-                        <li><a href="registrar.php">Registrar</a></li>
-                        <li><a href="olvide.php">He olvidado mis datos</a></li>
-                        </ul>
-                        <?php include("MEN/log.php"); ?>
-                        </form>
-                      </div>
-                </ul>
-            </li>
-            <li class="I"><img src="../RECU/IMG/PNG/Nombre.png"></li>
-            <li class="S">
-                <a>MANSUR</a>
-            </li>
-        </ul>
-    </div>
+<div id="HE">
+    <ul>
+        <li>
+            <a href="carrito.php"><span class="icon-cart"></span>Carrito</a>
+        </li>
+        <li>
+            <a href="login.php"><span class="icon-user"></span>Loguear</a>
+        </li>
+        <li class="I"><img src="../RECU/IMG/PNG/Nombre.png"></li>
+        <li class="S">
+            <a>MANSUR</a>
+        </li>
+    </ul>
+</div>
 
     <div class="ME">
         <ul>
@@ -41,7 +24,7 @@
                     
                 <form method="POST" action=""> 
                   <button class="IC" name="buscar" value="buscar"><span class="icon-bus"></span></button>
-                  <input type="search" id="BUS" name="busqueda" placeholder="Buscar..." />
+                  <input type="search" id="BUS" name="busqueda" placeholder="Buscar" />
                 </form>
                 
                 </div>

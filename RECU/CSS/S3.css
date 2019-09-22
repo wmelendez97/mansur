@@ -132,15 +132,6 @@ h4:hover{
 		color: white;
 		margin-right: 4px;
 		}
-		.ARC ul.A li.C .CAN button{
-		background: #c1ccd2;
-		border: none;
-		z-index: 1;
-		height: 25px;
-		width: 20px;
-		position: absolute;
-		margin: 0px;
-		}
 		.ARC h5{
 		margin-top: 10px;
 		color: #CD5360;
@@ -154,6 +145,15 @@ h4:hover{
   		font-size: 20px;
   		font-family:'Open Sans', 'Bahnschrift', 'Arial';
   		text-align: left;
+		}
+		.ARC ul.A li.C .CAN input.arc{
+		border-radius: 5px;
+		background-color: #ffffff;
+		border: 2px solid;
+		border-color: #d0dce9;
+		font-size: 14px;
+	  	font-family: 'Arial';
+	  	padding: 3px;
 		}
 #ESC1{
 	width: 60%;
@@ -411,6 +411,11 @@ h4:hover{
 		  	text-align: left;
 			margin: 0;
 			}
+			.RE ul li a.T1{
+			color: #82A4C6;
+	  		font-size: 14px;
+	  		font-family:'Open Sans', 'Bahnschrift', 'Arial';
+			}
 			.RE ul li input{
 			margin-top: 0.7%;
 			width: 50%;
@@ -652,6 +657,12 @@ h4:hover{
 			.RE ul li input.din{
 			width: 30%;
 			}
+			.ARC ul.A li.C .CAN input.arc{
+			font-size: 13px;
+			}
+			.RE ul li a.T1{
+	  		font-size: 12px;
+			}
 }
 @media screen and (max-width:768px ) {
 			.ARC ul.L{
@@ -828,6 +839,9 @@ h4:hover{
 			}
 			.RE ul li input.din{
 			width: 50%;
+			}
+			.ARC ul.A li.C .CAN input.arc{
+			font-size: 12px;
 			}
 }
 @media screen and (max-width:360px ) {

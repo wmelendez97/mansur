@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <title>Mansur: Genero</title>
         <link rel='stylesheet' type='text/css' href='../RECU/CSS/Style.css' media="all">
-        <link rel='stylesheet' type='text/css' href='../RECU/CSS/Fonts.css' media="all">
         <link rel='stylesheet' type='text/css' href='../RECU/CSS/S2.css' media="all">
+        <link rel='stylesheet' type='text/css' href='../RECU/CSS/Fonts.css' media="all">
         <link rel="shortcut icon" href="../RECU/CSS/FON/L2.ico">
     </head>
 <body>
@@ -40,7 +40,13 @@ if(isset($uid)){
   </div>
   <div class="AP">
      <h1>PRODUCTOS</h1>
-     <?php include("ELE/gen.php"); ?>
+     <?php 
+      include "../RECU/ELE/BD.php";
+      $id = $_GET['gen'];
+      $sql = "SELECT * FROM articulo WHERE ge_id = '$id' AND estado = 1";
+      $result = mysqli_query($con,$sql);
+      include("ELE/art.php");
+     ?>
     </div>
   </div>
 </div>

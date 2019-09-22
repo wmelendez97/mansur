@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <title>Mansur</title>
         <link rel='stylesheet' type='text/css' href='RECU/CSS/Style.css' media="all">
-        <link rel='stylesheet' type='text/css' href='RECU/CSS/Fonts.css' media="all">
         <link rel='stylesheet' type='text/css' href='RECU/CSS/Slide.css' media="all">
+        <link rel='stylesheet' type='text/css' href='RECU/CSS/Fonts.css' media="all">
         <link rel="shortcut icon" href="RECU/CSS/FON/L2.ico">
     </head>
 <body>

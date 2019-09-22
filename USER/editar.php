@@ -33,7 +33,8 @@ if(isset($uid)){
 <div class="RE">
      <h1>AÑADIR ARTICULO</h1>
      <ul class="na">
-        <form method="POST" action="" enctype="multipart/form-data">
+          <form method="POST" action="" enctype="multipart/form-data">
+          <li><a href="<?php echo $eliminar?>"><span class="icon-eliminar"></span>ELiminar</a></li>
           <li><h3>Nombre del articulo:</h3>
           <input name="nombre" value="<?php echo $mostrar['nombre']?>"></li>
           <li><h3>Marca del articulo:</h3>

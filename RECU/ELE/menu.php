@@ -10,7 +10,7 @@
                 </ul>
             </li>
             <li>
-              <a href="PAG/login.php"><span class="icon-user"></span>Usuario</a>
+              <a href="PAG/login.php"><span class="icon-user"></span>Loguear</a>
                 <ul class="USL">
                       <div id="US">
                       <form method="POST" action="">
@@ -41,7 +41,7 @@
                     
                 <form method="POST" action=""> 
                   <button class="IC" name="buscar" value="buscar"><span class="icon-bus"></span></button>
-                  <input type="search" id="BUS" name="busqueda" placeholder="Buscar..." />
+                  <input type="search" id="BUS" name="busqueda" placeholder="Buscar" />
                 </form>
                 
                 </div>

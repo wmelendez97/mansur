@@ -2,26 +2,20 @@
 <a href="#Menu"><span class="icon-menu"></span></a>
 </div>
 
-    <div id="HE">
-        <ul>
-            <li>
-                <a href="carrito.php"><span class="icon-cart"></span>Carrito</a>
-                <ul class="CAR">
-                </ul>
-            </li>
-            <?php
-            if($rango = 1){
-                include("MEN/USA.php");
-            }else{
-                include("MEN/USC.php");
-            }
-            ?>
-            <li class="I"><img src="../RECU/IMG/PNG/Nombre.png"></li>
-            <li class="S">
-                <a>MANSUR</a>
-            </li>
-        </ul>
-    </div>
+<div id="HE">
+    <ul>
+        <li>
+            <a href="carrito.php"><span class="icon-cart"></span>Carrito</a>
+        </li>
+        <li>
+            <a href="login.php"><span class="icon-user"></span>Loguear</a>
+        </li>
+        <li class="I"><img src="../RECU/IMG/PNG/Nombre.png"></li>
+        <li class="S">
+            <a>MANSUR</a>
+        </li>
+    </ul>
+</div>
 
     <div class="ME">
         <ul>
@@ -30,7 +24,7 @@
                     
                 <form method="POST" action=""> 
                   <button class="IC" name="buscar" value="buscar"><span class="icon-bus"></span></button>
-                  <input type="search" id="BUS" name="busqueda" placeholder="Buscar..." />
+                  <input type="search" id="BUS" name="busqueda" placeholder="Buscar" />
                 </form>
                 
                 </div>
