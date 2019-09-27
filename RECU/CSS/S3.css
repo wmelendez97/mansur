@@ -6,7 +6,7 @@
 h4{
 	color: #82A4C6;
   	font-size: 14px;
-  	font-family:'Open Sans', 'Bahnschrift', 'Arial';
+  	font-family:'Roboto', 'Noto', 'Arial', 'sans-serif;';
   	text-align: left;
 	}
 h4:hover{
@@ -91,13 +91,13 @@ h4:hover{
 		.ARC h2{
 		color: black;
   		font-size: 15px;
-  		font-family:'Open Sans', 'Bahnschrift', 'Arial';
+  		font-family:'Roboto', 'Noto', 'Arial', 'sans-serif;';
   		text-align: left;
 		}
 		.ARC h3{
 		color: #CD5360;
   		font-size: 15px;
-  		font-family:'Open Sans', 'Bahnschrift', 'Arial';
+  		font-family:'Roboto', 'Noto', 'Arial', 'sans-serif;';
   		text-align: left;
 		}
 		.ARC ul.A li.C .CAN{
@@ -136,14 +136,14 @@ h4:hover{
 		margin-top: 10px;
 		color: #CD5360;
   		font-size: 20px;
-  		font-family:'Open Sans', 'Bahnschrift', 'Arial';
+  		font-family:'Roboto', 'Noto', 'Arial', 'sans-serif;';
   		text-align: left;
 		}
 		.ARC h6{
 		margin-top: 10px;
 		color: black;
   		font-size: 20px;
-  		font-family:'Open Sans', 'Bahnschrift', 'Arial';
+  		font-family:'Roboto', 'Noto', 'Arial', 'sans-serif;';
   		text-align: left;
 		}
 		.ARC ul.A li.C .CAN input.arc{
@@ -177,7 +177,7 @@ h4:hover{
 	#ESC1 h2.m{
 		color: #787471;
   		font-size: 15px;
-  		font-family:'Open Sans', 'Bahnschrift', 'Arial';
+  		font-family:'Roboto', 'Noto', 'Arial', 'sans-serif;';
   		text-align: right;
   		margin-top: 1.8%;
 		}
@@ -230,7 +230,7 @@ h4:hover{
 	#DE ul.DIR li h1{
 		color: #545454;
   		font-size: 14px;
-  		font-family:'Open Sans', 'Bahnschrift', 'Arial';
+  		font-family:'Roboto', 'Noto', 'Arial', 'sans-serif;';
   		text-align: left;
   		margin-left: 10px;
   		margin-top: 3px;
@@ -302,7 +302,7 @@ h4:hover{
 	#DA ul.DIR li h1{
 		color: black;
   		font-size: 14px;
-  		font-family:'Open Sans', 'Bahnschrift', 'Arial';
+  		font-family:'Roboto', 'Noto', 'Arial', 'sans-serif;';
   		text-align: left;
   		margin-left: 10px;
   		margin-top: 3px;
@@ -406,15 +406,15 @@ h4:hover{
 			}
 			.RE ul li h5{
 			color: #82A4C6;
-		  	font-size: 18px;
-		  	font-family: 'Bahnschrift SemiBold', 'Arial';
+		  	font-size: 16px;
+		  	font-family: 'Roboto', 'Noto', 'Arial', 'sans-serif;';
 		  	text-align: left;
 			margin: 0;
 			}
 			.RE ul li a.T1{
-			color: #82A4C6;
+			color: grey;
 	  		font-size: 14px;
-	  		font-family:'Open Sans', 'Bahnschrift', 'Arial';
+	  		font-family: 'Roboto', 'Noto', 'Arial', 'sans-serif;';
 			}
 			.RE ul li input{
 			margin-top: 0.7%;

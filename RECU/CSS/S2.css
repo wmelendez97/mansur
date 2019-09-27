@@ -233,7 +233,7 @@
 			color: #f2f2f2;
 			background-color: #033649;
 		  	font-size: 20px;
-		  	font-family:'Gisha', 'DengXian',  'Helvatica';
+		  	font-family:'Open Sans', 'Bahnschrift', 'Arial';
 		  	font-weight: bold;
 		  	text-align: center;
 			margin: auto;
@@ -252,7 +252,7 @@
 			.AC ul li a{
   			color: black;
   			font-size: 18px;
-  			font-family: 'AvantGarde LT Medium', 'Lato Semibold', 'Tahoma';
+  			font-family: 'Open Sans', 'Bahnschrift', 'Arial';
 			}
 			.AC ul li input[type="checkbox"]{
 			margin-right: 5px;
@@ -307,6 +307,7 @@
 		.ADM ul li a{
 		color: #82A4C6;
 	  	font-size: 16px;
+	  	font-style: bold;
 	  	font-family:'Open Sans', 'Bahnschrift', 'Arial';
 	  	font-style: bold;
 		}
@@ -339,29 +340,14 @@
 			}
 			.DET ul li h3{
   			float: left;
-  			font-size: 22px;
-  			font-family:'Bahnschrift SemiBold', 'Arial';
+  			font-size: 20px;
+  			font-family:'Roboto', 'Noto', 'Arial', 'sans-serif;';
   			text-align: left;
-  			margin-left: 5%;
+  			margin-left: 2%;
   			color: #5e5e5e;
 			}
 			.DET ul.L li.pre h3{
 			color: #CD5360;
-			}
-			.DET ul li.ant h2{
-			float: left;
-			color: #5e5e5e;
-			font-size: 16px;
-			font-family: 'Bahnschrift SemiBold', 'Arial';
-			text-align: left;
-			}
-			.DET ul li.ant h3{
-			float: left;
-			font-size: 16px;
-			font-family:'Bahnschrift SemiBold', 'Arial';
-			text-align: left;
-			margin-left: 9%;
-			color: #8d8d8d;
 			}
 			.DET ul.T{
 			margin: 0px auto;
@@ -383,7 +369,7 @@
 			.DET ul.T li.H{
 			float: left;
 			margin-left: 0%;
-			margin-right: 4%;
+			margin-right: 0%;
 			}
 			.DET ul.T li select{
 			margin-left: 0%;
@@ -589,7 +575,7 @@
 	  			font-size: 20px;
 				}
 			.DET ul li h3{
-	  			font-size: 20px;
+	  			font-size: 18px;
 				}
 			.DET ul.T li a{
 				font-size: 16px;
@@ -899,14 +885,7 @@
 	  			font-size: 18px;
 				}
 			.DET ul li h3{
-	  			font-size: 18px;
-				}
-			.DET ul li.ant h2{
-				font-size: 14px;
-				}
-			.DET ul li.ant h3{
-				font-size: 14px;
-				margin-left: 7.5%;
+	  			font-size: 16px;
 				}
 			.DET ul.T li a{
 				font-size: 14px;
@@ -947,7 +926,7 @@
 	  			font-size: 16px;
 				}
 			.DET ul li h3{
-	  			font-size: 16px;
+	  			font-size: 14px;
 				}
 			.DET ul.T li a{
 				font-size: 12px;

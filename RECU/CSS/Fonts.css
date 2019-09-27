@@ -39,6 +39,16 @@
     src: url('FON/OpenSans.ttf');
 }
 
+@font-face {
+    font-family: 'Roboto';
+    src: url('FON/Roboto.ttf');
+}
+
+@font-face {
+    font-family: 'Noto';
+    src: url('FON/Noto.ttf');
+}
+
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;

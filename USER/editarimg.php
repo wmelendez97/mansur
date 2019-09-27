@@ -31,7 +31,7 @@ if(isset($uid)){
         ?>
     
 <div class="RE">
-     <h1>AÑADIR ARTICULO</h1>
+     <h1>EDITAR ARTICULO</h1>
      <ul class="na">
         <form method="POST" action="" enctype="multipart/form-data">
           <li><a href="<?php echo $eliminar?>"><span class="icon-eliminar"></span>ELiminar</a></li>

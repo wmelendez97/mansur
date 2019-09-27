@@ -15,7 +15,7 @@ input{
 	border: 2px solid;
 	border-color: #d0dce9;
 	font-size: 16px;
-  	font-family: 'Helvatica', 'Verdana', 'Open Sans', 'Arial';
+  	font-family: 'Roboto', 'Noto', 'Arial', 'sans-serif;';
   	padding: 1px;
 	}
 textarea{
@@ -23,7 +23,7 @@ textarea{
 	background-color: #ffffff;
 	border: 2px solid;
 	border-color: #d0dce9;
-	font-family:'Helvatica', 'Verdana', 'Open Sans', 'Arial';
+	font-family: 'Roboto', 'Noto', 'Arial', 'sans-serif;';
 	font-size: 16px;
 	padding: 1px;
 	}
@@ -32,7 +32,7 @@ select{
 	background-color: #ffffff;
 	border: 2px solid;
 	border-color: #d0dce9;
-	font-family:'Helvatica', 'Verdana', 'Open Sans', 'Arial';
+	font-family: 'Roboto', 'Noto', 'Arial', 'sans-serif;';
 	font-size: 14px;
 	padding: 1px;
 	}
@@ -82,22 +82,14 @@ select:focus{
 	opacity: 0.85;
 	z-index:100;
 	margin-left: 87%;
-	padding-bottom: 5px;
 	position: fixed;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
-	}
-	.Alerta h1{
-	color: #ffffff;
-  	font-size: 13px;
- 	font-family:'Gisha', 'DengXian',  'Helvatica';
-  	text-align: center;
-  	margin-top: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
 	}
 	.Alerta p{
 	color: #ffffff;
 	text-align: center;
-  	margin: 10px 5px 10px 5px;
+  	margin: 3%;
   	font-size: 11px;
   	font-family:'Aller', 'Bahnschrift SemiBold', 'Arial';
 	}
@@ -381,7 +373,7 @@ select:focus{
   			padding: 1px 1px;
   			padding-left: 10px;
   			font-size: 15px;
-  			font-family:'Open Sans', 'Bahnschrift', 'Arial';
+  			font-family:'Roboto', 'Noto', 'Arial', 'sans-serif;';
   			text-align: left;
 			}
 			.AR h4{
@@ -389,7 +381,7 @@ select:focus{
 			padding: 1px 1px;
   			padding-left: 10px;
   			font-size: 9px;
-  			font-family:'Open Sans', 'Bahnschrift', 'Arial';
+  			font-family:'Roboto', 'Noto', 'Arial', 'sans-serif;';
   			text-align: left;
 			}
 			.AR ul{
@@ -463,7 +455,7 @@ select:focus{
   			color: #f2f2f2;
   			padding-left: 20px;
   			font-size: 14px;
-  			font-family: 'AvantGarde LT Medium', 'Lato Semibold', 'Tahoma';
+  			font-family: 'Roboto', 'Noto', 'Arial', 'sans-serif;';
 			}
 			.FO ul li span{
 			margin-right: 10px;
