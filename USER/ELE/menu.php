@@ -41,7 +41,12 @@
                     
                 <form method="POST" action=""> 
                   <button class="IC" name="buscar" value="buscar"><span class="icon-bus"></span></button>
-                  <input type="search" id="BUS" name="busqueda" placeholder="Buscar..." />
+                  <input type="search" id="BUS" name="busqueda" placeholder="Buscar" />
+                  <?php if (isset($_POST['buscar'])) {
+                    $bus = $_POST['busqueda'];
+                    $link = 'busqueda.php?bus='.$bus;
+                    header("location: ../PAG/$link");
+                  }?>
                 </form>
                 
                 </div>

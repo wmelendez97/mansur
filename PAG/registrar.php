@@ -40,7 +40,5 @@
     <img src="../RECU/IMG/PNG/L2.png">
   </div>
 </div>
-
 <?php if($msg != "") echo $msg . ""; ?>
-
 <?php include("../RECU/ELE/footerP.php"); ?>

@@ -349,8 +349,16 @@
 			.DET ul.L li.pre h3{
 			color: #CD5360;
 			}
+			.DET ul.L li.ant h2{
+			color: #a9acad;
+			font-size: 16px;
+			}
+			.DET ul.L li.ant h3{
+			color: #a9acad;
+			font-size: 14px;
+			}
 			.DET ul.T{
-			margin: 0px auto;
+			margin-top: 6.2%;
 			}
 			.DET ul.B{
 			margin: 0px auto;
@@ -448,7 +456,13 @@
 	    	}
 	    	.DET ul li button#I:hover{
 			cursor: default;
-	    	}
+			}
+			.DET p{
+			color: black;
+			font-size: 20px;
+			font-family: 'Aller', 'Bahnschrift SemiBold', 'Arial';
+			text-align: left;
+			}
 			#ES1 ul.ter{
 			width: 80%;
 			margin: auto;

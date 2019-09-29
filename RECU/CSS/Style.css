@@ -85,6 +85,7 @@ select:focus{
 	position: fixed;
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
+	margin-top: 50px;
 	}
 	.Alerta p{
 	color: #ffffff;

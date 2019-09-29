@@ -9,24 +9,36 @@
                 <ul class="CAR">
                 </ul>
             </li>
-            <li>
-              <a href="PAG/login.php"><span class="icon-user"></span>Loguear</a>
-                <ul class="USL">
-                      <div id="US">
-                      <form method="POST" action="">
-                        <input type="email" nombre="correo" placeholder="Correo Electronico"/>
-                        <input type="password" nombre="contraseña" placeholder="Contraseña"/>
-                        <input type="checkbox" name="CH" value="CH"><a class="S">Recordar</a>
-                        <ul>
-                        <li><button type="submit" nombre="login">Entrar</button></li>
-                        <li><a href="PAG/registrar.php">Registrar</a></li>
-                        <li><a href="PAG/olvide.php">He olvidado mis datos</a></li>
+            <?php
+             if (isset($uid)):?>
+                <?php if ($rango == 1):?>
+                <li>
+                <a href="USER/favoritos.php"><span class="icon-admin"></span><?php echo $usuario?></a>
+                    <ul class="USL"> 
+                        <ul class="USC">
+                            <li class="crear"><a href="USER/favoritos.php"><span class="icon-nuevo"></span>Agregar producto</a></li>
+                            <li class="config"><a href="USER/perfil.php"><span class="icon-usernew"></span>Agregar usuario</a></li>
+                            <li class="salir"><a href="USER/cerrar.php"><span class="icon-salir"></span>Cerrar sesión</a></li>
                         </ul>
-                        <?php include("MEN/log.php"); ?>
-                        </form>
-                      </div>
-                </ul>
-            </li>
+                    </ul>
+                </li>
+                <?php elseif ($rango == 0):?>
+                <li>
+                <a href="USER/favoritos.php"><span class="icon-user"></span><?php echo $usuario?></a>
+                    <ul class="USL"> 
+                        <ul class="USC">
+                            <li class="crear"><a href="USER/favoritos.php"><span class="icon-fav"></span>Favoritos</a></li>
+                            <li class="config"><a href="USER/perfil.php"><span class="icon-config"></span>Editar perfil</a></li>
+                            <li class="salir"><a href="USER/cerrar.php"><span class="icon-salir"></span>Cerrar sesión</a></li>
+                        </ul>
+                    </ul>
+                </li>
+                <?php endif ?>
+            <?php else:?>
+                <li>
+                    <a href="PAG/login.php"><span class="icon-user"></span>Loguear</a>
+                </li>
+            <?php endif ?>
             <li class="I"><img src="RECU/IMG/PNG/Nombre.png"></li>
             <li class="S">
                 <a>MANSUR</a>
@@ -42,6 +54,11 @@
                 <form method="POST" action=""> 
                   <button class="IC" name="buscar" value="buscar"><span class="icon-bus"></span></button>
                   <input type="search" id="BUS" name="busqueda" placeholder="Buscar" />
+                  <?php if (isset($_POST['buscar'])) {
+                    $bus = $_POST['busqueda'];
+                    $link = 'busqueda.php?bus='.$bus;
+                    header("location: PAG/$link");
+                  }?>
                 </form>
                 
                 </div>

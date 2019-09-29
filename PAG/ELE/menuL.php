@@ -21,7 +21,6 @@
         <ul>
             <li class="BU">
                 <div class="BA">
-                    
                 <form method="POST" action=""> 
                   <button class="IC" name="buscar" value="buscar"><span class="icon-bus"></span></button>
                   <input type="search" id="BUS" name="busqueda" placeholder="Buscar" />

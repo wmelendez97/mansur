@@ -73,7 +73,7 @@
           <?php endif ?>
         </ul>
     </ul>
-    <p><?php echo $mostrar['descripcion']?></p>
+    <p><?php echo nl2br($mostrar['descripcion'])?></p>
   </div>
 </div>
 <?php } ?>

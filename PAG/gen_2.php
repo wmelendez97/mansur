@@ -42,11 +42,10 @@ if(isset($uid)){
      <h1>PRODUCTOS</h1>
      <?php 
       include "../RECU/ELE/BD.php";
-      $id = $_GET['gen'];
-      $sql = "SELECT * FROM articulo WHERE ge_id = '$id' AND estado = 1";
+      $sql = "SELECT * FROM articulo WHERE ge_id = 2 AND estado = 1";
       $result = mysqli_query($con,$sql);
       include("ELE/art.php");
-     ?>
+      ?>
     </div>
   </div>
 </div>

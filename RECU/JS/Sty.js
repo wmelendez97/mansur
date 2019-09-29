@@ -34,4 +34,7 @@ function main(){
 	$('.CHE').click(function(){
 		window.location='com.html';
 	});
+
+	var output = document.form1.myTextarea.value.replace(/\n/g, "<br />"); 
+
 };
