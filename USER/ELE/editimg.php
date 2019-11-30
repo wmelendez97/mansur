@@ -22,11 +22,11 @@
     if(empty($imagen)){
 		$imagen = "PNG/L3.png";
     } else {
-        if(($tamaño <= 2000000) && ($tipo  == "image/jpeg" || $tipo  == "image/jpg" || $tipo  == "image/png" || $tipo  == "image/gif")){
-            $carpeta = $_SERVER['DOCUMENT_ROOT'] . '/Inventario/RECU/IMG/';
+        if(($tamaño <= 2000000) && ($tipo  == "image/jpeg" || $tipo  == "image/jpg" || $tipo  == "image/png" || $tipo  == "image/gif" || $tipo  == "image/bmp")){
+            $carpeta = $_SERVER['DOCUMENT_ROOT'] . '/MANSUR/RECU/IMG/';
             move_uploaded_file($_FILES['imagen']['tmp_name'],$carpeta.$imagen);
             } else { 
-            $msg = "<div class='Alerta'><p>ERROR: La imagen debe ser de formato JPEG, JPG, PNG o GIF; además de pesar menos de 2MB.</p></div>"; 
+            $msg = "<div class='Alerta'><p>ERROR: La imagen debe ser de formato JPEG, JPG, PNG, BMP o GIF; además de pesar menos de 2MB.</p></div>"; 
             return false;   
             }    
     }
