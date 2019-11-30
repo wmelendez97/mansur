@@ -29,7 +29,7 @@ if(isset($uid)){
 
     while($mostrar=mysqli_fetch_assoc($result)){  
       $cat_id = $mostrar['cat_id'];  
-      $gen_id = $mostrar['gen_id'];       
+      $ge_id = $mostrar['ge_id'];       
         ?>
     
 <div class="RE">
@@ -63,7 +63,7 @@ if(isset($uid)){
           </select></li>
           <li><h3>Genero:</h3>
             <select name="genero">
-            <option value="<?php echo $gen_id?>">--Selecciona un genero--</option> 
+            <option value="<?php echo $ge_id?>">--Selecciona un genero--</option> 
               <?php 
               $sql2 = "SELECT * FROM genero";
               $genero = mysqli_query($con,$sql2);
