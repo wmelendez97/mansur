@@ -1,6 +1,8 @@
 <?php
     include "../RECU/ELE/BD.php";
 
+    $msg = "";
+
     if (isset($_POST['subir'])) {
 
 	$nombre = $_POST['nombre'];
@@ -14,7 +16,12 @@
     $genero = $_POST['genero'];
     $estado = $_POST['estado'];
     
-    $con->query("UPDATE  articulo  SET  fecha ='$fecha', nombre ='$nombre', marca ='$marca', precio ='$precio', descuento ='$descuento', descripcion ='$descripcion', cat_id ='$categoria', ge_id ='$genero', estado ='$estado', cantidad ='$cantidad' WHERE art_id='$id'");
-    echo "<p>Actualizacion completa</p>";
+    $query = $con->query("UPDATE  articulo  SET  fecha ='$fecha', nombre ='$nombre', marca ='$marca', precio ='$precio', descuento ='$descuento', descripcion ='$descripcion', cat_id ='$categoria', ge_id ='$genero', estado ='$estado', cantidad ='$cantidad' WHERE art_id='$id'");
+    if($query == false){
+        $msg = "<div class='Alerta'><p>ERROR: No se ha podido procesar la inserción</p></div>";
+        return false; 
+    } else {
+		$msg = "<div class='Alerta'><p>El producto se ha actualizado satisfactoreamente.</p></div>";
+			}
     }
 ?>

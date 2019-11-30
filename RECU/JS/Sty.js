@@ -35,6 +35,7 @@ function main(){
 		window.location='com.html';
 	});
 
-	var output = document.form1.myTextarea.value.replace(/\n/g, "<br />"); 
+	var output = document.form1.myTextarea.value.replace(/\n/g, "<br />");
 
+	$(".Alerta").fadeOut(12000);
 };

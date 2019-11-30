@@ -20,7 +20,7 @@
       <h3>Nombre</h3>
       <input type="text" name="nombre"  placeholder="Nombre completo"/>
       <h3>Username</h3>
-      <input type="text" name="username"  placeholder="Eje: minombre123" maxlength="10"/>
+      <input type="text" name="username"  placeholder="Eje: minombre123" maxlength="20"/>
       <h3>Correo</h3>
       <input type="email" name="correo"/>
       <h3>Contraseña</h3>

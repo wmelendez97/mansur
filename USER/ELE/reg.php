@@ -19,38 +19,48 @@
 
 	if(empty($nombre) || empty($username) || empty($correo) || empty($contraseña) || empty($rcontraseña) ||
 	empty($telefono)){
-		echo "<p>Por favor, complete todas las filas.</p>";
+		$msg = "<div class='Alerta'><p>Por favor, complete todas las filas.</p></div>";
+		return false; 
 	} else {
 		if(!preg_match($nom,$nombre)){
-			echo "<p>El nombre $nombre no es valido.</p>";
+		$msg = "<div class='Alerta'><p>Error: El nombre $nombre no es valido.</p></div>";
+		return false; 
 	}
 	if(!preg_match($correoValidation,$correo)){
-		echo "<p>El correo que intenta digitar no es valido.</p>";
+		$msg = "<div class='Alerta'><p>Error: El correo que intenta digitar no es valido.</p></div>";
+		return false; 
 	}
 	if(strlen($contraseña) < 9 ){
-		echo "<p>La contraseña es muy debil.</p>";
+		$msg = "<div class='Alerta'><p>Error: La contraseña es muy debil.</p></div>";
+		return false; 
 	}
 	if(strlen($rcontraseña) < 9 ){
-		echo "<p>La contraseña es muy debil.</p>";
+		$msg = "<div class='Alerta'><p>Error: La contraseña es muy debil.</p></div>";
+		return false; 
+	}
 	if($contraseña != $rcontraseña){
-		echo "<p>Las contraseñas no coinciden.</p>";
+		$msg = "<div class='Alerta'><p>Error: Las contraseñas no coinciden.</p></div>";
+		return false; 
 	}
 	if(!preg_match($numero,$telefono)){
-		$msg = "<div class='Alerta'><h1>Error</h1><p>El numero $telefono no es valido.</p>";
+		$msg = "<div class='Alerta'><p>Error: El numero $telefono no es valido.</p></div>";
+		return false; 
 	}
 	if(!(strlen($telefono) == 8)){
-		echo "<p>El numero de telefono consta de 8 digitos.</p>";
+		$msg = "<div class='Alerta'><p>Error: El numero de telefono consta de 8 digitos.</p></div>";
+		return false; 
 	}
 	$sql = "SELECT user_id FROM usuario WHERE correo = '$correo' LIMIT 1" ;
 	$check_query = mysqli_query($con,$sql);
 	$count_email = mysqli_num_rows($check_query);
 	if($count_email > 0){
-		echo "<p>El correo $correo ya esta en uso actualmente.</p>";
+		$msg = "<div class='Alerta'><p>Error: El correo $correo ya esta en uso actualmente.</p></div>";
+		return false; 
 	} else {
 		$hash = password_hash($contraseña, PASSWORD_BCRYPT);
 		$con->query("INSERT INTO usuario (nombre, username, correo, pass, telefono, rango) VALUES ('$nombre', '$username', '$correo', '$hash', '$telefono', '$rango')");
-		echo "<p>Se ha registrado satisfactoreamente.</p>";
+		$msg = "<div class='Alerta'><p>Se ha registrado satisfactoreamente.</p></div>";
 			}
 		}
 	}
-}
+?>

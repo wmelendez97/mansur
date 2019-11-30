@@ -47,4 +47,5 @@ if(isset($uid)){
       </ul>
   </div>
 </div>
+<?php if($msg != "") echo $msg . ""; ?>
 <?php include("../RECU/ELE/footerU.php"); ?>

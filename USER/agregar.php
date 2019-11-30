@@ -40,6 +40,7 @@ if(isset($uid)){
           <textarea name="descripcion"></textarea></li>
           <li><h3>Categoria:</h3>
             <select name="categoria">
+            <option value="none" selected disabled hidden>--Selecciona una categoría--</option> 
               <?php 
               $sql1 = "SELECT * FROM categoria";
               $categoria = mysqli_query($con,$sql1);
@@ -49,6 +50,7 @@ if(isset($uid)){
           </select></li>
           <li><h3>Genero:</h3>
             <select name="genero">
+            <option value="none" selected disabled hidden>--Selecciona un genero--</option> 
               <?php 
               $sql2 = "SELECT * FROM genero";
               $genero = mysqli_query($con,$sql2);
@@ -63,11 +65,13 @@ if(isset($uid)){
           </select></li>
           <li><h3>Imagen del articulo:</h3>
           <input class="arch" name="imagen" type="file"></li>
+          <li><a class="T1">La imagen debe ser de formato JPEG, JPG, PNG o GIF; además de pesar menos de 2MB.</a></li>
+          <li><a class="T1">Resolución recomendada: 500x500.</a></li>
           <li><button name="subir">Subir Articulo</button></li>
           <?php include("ELE/nart.php"); ?>
           </form>
       </ul>
   </div>
 </div>
-
+<?php if($msg != "") echo $msg . ""; ?>
 <?php include("../RECU/ELE/footerU.php"); ?>

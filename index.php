@@ -18,7 +18,6 @@ $link2 = 'genero.php?ge='.$g2;
 ?>
 <div id="SL">
         <ul>
-        
             <li class="P"><h5>MANSUR</h5><h6>Ropa y Accesorios</h6><img src="RECU/IMG/PNG/P1.jpg" alt=""></li>
             <li class="F"><h5>MANSUR</h5><h6>Ropa y Accesorios</h6><form action="PAG/gen_1.php"><button id="Ella"></form>PARA ELLA</button><img src="RECU/IMG/PNG/P2.jpg" alt=""></li>
             <li class="M"><h5>MANSUR</h5><h6>Ropa y Accesorios</h6><form action="PAG/gen_2.php"><button id="El"></form>PARA ÉL</button><img src="RECU/IMG/PNG/P3.jpg" alt=""></li>

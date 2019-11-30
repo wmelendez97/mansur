@@ -27,7 +27,9 @@ if(isset($uid)){
     
     $result = mysqli_query($con,$sql);
 
-    while($mostrar=mysqli_fetch_assoc($result)){         
+    while($mostrar=mysqli_fetch_assoc($result)){
+      $cat_id = $mostrar['cat_id'];  
+      $ge_id = $mostrar['ge_id'];       
         ?>
     
 <div class="RE">
@@ -51,6 +53,7 @@ if(isset($uid)){
           <textarea name="descripcion"><?php echo $mostrar['descripcion']?></textarea></li>
           <li><h3>Categoria:</h3>
             <select name="categoria">
+            <option value="<?php echo $cat_id?>">--Selecciona una categoría--</option> 
               <?php 
               $sql1 = "SELECT * FROM categoria";
               $categoria = mysqli_query($con,$sql1);
@@ -60,6 +63,7 @@ if(isset($uid)){
           </select></li>
           <li><h3>Genero:</h3>
             <select name="genero">
+            <option value="<?php echo $ge_id?>">--Selecciona un genero--</option> 
               <?php 
               $sql2 = "SELECT * FROM genero";
               $genero = mysqli_query($con,$sql2);
@@ -80,5 +84,5 @@ if(isset($uid)){
   </div>
 <?php } ?>
 </div>
-
+<?php if($msg != "") echo $msg . ""; ?>
 <?php include("../RECU/ELE/footerU.php"); ?>
