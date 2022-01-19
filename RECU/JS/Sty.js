@@ -38,4 +38,5 @@ function main(){
 	var output = document.form1.myTextarea.value.replace(/\n/g, "<br />");
 
 	$(".Alerta").fadeOut(12000);
+
 };
